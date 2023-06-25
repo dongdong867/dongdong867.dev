@@ -27,7 +27,13 @@ module.exports = {
 			{
 				synthwave: {
 					...require('daisyui/src/theming/themes')['[data-theme=synthwave]'],
-					'base-100': '#111827'
+					primary: '#3f72af',
+					secondary: '#e84a5f',
+					'secondary-hover': '#ff8c94',
+					accent: '#bad7e9',
+					neutral: '#303a52',
+					'base-100': '#111827',
+					info: '#537188'
 				}
 			}
 		],
