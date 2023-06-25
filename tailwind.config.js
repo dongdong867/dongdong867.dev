@@ -16,11 +16,18 @@ module.exports = {
 	plugins: [require('daisyui')],
 	daisyui: {
 		themes: [
-			'cupcake',
+			{
+				emerald: {
+					...require('daisyui/src/theming/themes')['[data-theme=emerald]'],
+					primary: '#cae2e8',
+					secondary: '#80ced1',
+					accent: '#111827'
+				}
+			},
 			{
 				synthwave: {
 					...require('daisyui/src/theming/themes')['[data-theme=synthwave]'],
-					'base-100': '#1b1b1b'
+					'base-100': '#111827'
 				}
 			}
 		],
