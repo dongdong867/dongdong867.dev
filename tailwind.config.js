@@ -19,9 +19,11 @@ module.exports = {
 			{
 				emerald: {
 					...require('daisyui/src/theming/themes')['[data-theme=emerald]'],
-					primary: '#cae2e8',
+					primary: '#93bfcf',
 					secondary: '#80ced1',
-					accent: '#111827'
+					accent: '#3d7ea6',
+					'base-100': '#f7f7f7',
+					info: '#eee9da'
 				}
 			},
 			{
