@@ -23,7 +23,10 @@ module.exports = {
 					secondary: '#80ced1',
 					accent: '#3d7ea6',
 					'base-100': '#f7f7f7',
-					info: '#eee9da'
+					info: '#eee9da',
+					'input:focus': {
+						outline: none
+					}
 				}
 			},
 			{
@@ -35,7 +38,10 @@ module.exports = {
 					accent: '#bad7e9',
 					neutral: '#303a52',
 					'base-100': '#111827',
-					info: '#537188'
+					info: '#537188',
+					'input:focus': {
+						outline: none
+					}
 				}
 			}
 		],
