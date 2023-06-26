@@ -25,7 +25,8 @@ module.exports = {
 					'base-100': '#f7f7f7',
 					info: '#eee9da',
 					'input:focus': {
-						outline: none
+						outline: '2px solid transparent',
+						'outline-offset': '2px'
 					}
 				}
 			},
@@ -40,7 +41,8 @@ module.exports = {
 					'base-100': '#111827',
 					info: '#537188',
 					'input:focus': {
-						outline: none
+						outline: '2px solid transparent',
+						'outline-offset': '2px'
 					}
 				}
 			}
