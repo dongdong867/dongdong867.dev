@@ -1,7 +1,20 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Montserrat, Lexend, Source_Code_Pro } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  variable: "--font-Montserrat",
+  display: "swap",
+});
+
+const lexend = Lexend({
+  variable: "--font-Lexend",
+  display: "swap",
+});
+
+const sourceCodePro = Source_Code_Pro({
+  variable: "--font-SourceCodePro",
+  display: "swap",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +28,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${montserrat.variable} ${lexend.variable} ${sourceCodePro.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
