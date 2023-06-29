@@ -30,12 +30,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-        className={`${montserrat.variable} ${lexend.variable} ${sourceCodePro.variable}`}
-      >
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${montserrat.variable} ${lexend.variable} ${sourceCodePro.variable}`}
+    >
+      <body>{children}</body>
     </html>
   );
 }
