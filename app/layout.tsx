@@ -2,16 +2,19 @@ import "./globals.css";
 import { Montserrat, Lexend, Source_Code_Pro } from "next/font/google";
 
 const montserrat = Montserrat({
+  subsets: ["latin"],
   variable: "--font-Montserrat",
   display: "swap",
 });
 
 const lexend = Lexend({
+  subsets: ["latin"],
   variable: "--font-Lexend",
   display: "swap",
 });
 
 const sourceCodePro = Source_Code_Pro({
+  subsets: ["latin"],
   variable: "--font-SourceCodePro",
   display: "swap",
 });
