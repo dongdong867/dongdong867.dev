@@ -7,6 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-Lexend)"],
+        serif: ["var(--font-Lexend)"],
+        mono: ["var(--font-SourceCodePro)"],
+        display: ["var(--font-Montserrat)"],
+        body: ["var(--font-Lexend)"],
+      },
+      // TODO: remove later
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
