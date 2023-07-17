@@ -12,6 +12,8 @@ import { useEffect, useState } from "react";
 
 const ThemeProvider = () => {
   const [mode, setMode] = useState("system");
+  const [clientX, setClientX] = useState(0);
+  const [clientY, setClientY] = useState(0);
 
   useEffect(() => {
     if (
@@ -26,14 +28,41 @@ const ThemeProvider = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button>
+        <Button
+          className="w-12 h-9 p-0 bg-white/0 text-primary text-xl hover:bg-muted-foreground/30"
+          onMouseMove={(e) => {
+            if (e.clientX < 48 && e.clientY < 36) {
+              setClientX(e.clientX / 3);
+              setClientY(e.clientY / 3);
+            }
+          }}
+          onMouseLeave={() => {
+            setClientX(0);
+            setClientY(0);
+          }}
+        >
           {mode !== "system" ? (
             <>
-              <LuSun className="dark:hidden" />
-              <LuMoon className="hidden dark:inline" />
+              <LuSun
+                className="dark:hidden"
+                style={{
+                  transform: `translate((${clientX}-20)px, (${clientY}-20)px)`,
+                }}
+              />
+              <LuMoon
+                className="hidden dark:inline"
+                style={{
+                  transform: `translate((${clientX}-20)px, (${clientY}-20)px)`,
+                }}
+              />
             </>
           ) : (
-            <LuMonitor />
+            <LuMonitor
+              style={{
+                transform: `translate(${clientX}%, ${clientY}%)`,
+                top: `20px`,
+              }}
+            />
           )}
         </Button>
       </DropdownMenuTrigger>
