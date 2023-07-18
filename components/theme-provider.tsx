@@ -12,8 +12,17 @@ import { useEffect, useState } from "react";
 
 const ThemeProvider = () => {
   const [mode, setMode] = useState("system");
+
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
+
   const [clientX, setClientX] = useState(0);
   const [clientY, setClientY] = useState(0);
+
+  const handleRef = (element: HTMLButtonElement) => {
+    setWidth(element.offsetWidth);
+    setHeight(element.offsetHeight);
+  };
 
   useEffect(() => {
     if (
@@ -29,9 +38,10 @@ const ThemeProvider = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          className="w-12 h-9 p-0 bg-white/0 text-primary text-xl hover:bg-muted-foreground/30"
+          ref={handleRef}
+          className="w-12 h-9 p-0 bg-white/0 text-primary text-xl hover:bg-muted-foreground/30 hover:cursor-none"
           onMouseMove={(e) => {
-            if (e.clientX < 48 && e.clientY < 36) {
+            if (e.clientX < width && e.clientY < height) {
               setClientX(e.clientX / 3);
               setClientY(e.clientY / 3);
             }
