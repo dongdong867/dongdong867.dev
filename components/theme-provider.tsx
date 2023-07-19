@@ -20,8 +20,10 @@ const ThemeProvider = () => {
   const [clientY, setClientY] = useState(0);
 
   const handleRef = (element: HTMLButtonElement) => {
-    setWidth(element.offsetWidth);
-    setHeight(element.offsetHeight);
+    if (element) {
+      setWidth(element.offsetWidth);
+      setHeight(element.offsetHeight);
+    }
   };
 
   useEffect(() => {
@@ -39,7 +41,7 @@ const ThemeProvider = () => {
       <DropdownMenuTrigger asChild>
         <Button
           ref={handleRef}
-          className="w-12 h-9 p-0 bg-white/0 text-primary text-xl hover:bg-muted-foreground/30 hover:cursor-none"
+          className="w-9 h-9 p-0 bg-white/0 text-primary text-xl hover:bg-muted-foreground/30 hover:cursor-none"
           onMouseMove={(e) => {
             if (e.clientX < width && e.clientY < height) {
               setClientX(e.clientX / 3);
