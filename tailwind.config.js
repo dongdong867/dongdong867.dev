@@ -38,14 +38,8 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: {
-          DEFAULT: "var(--primary)",
-          foreground: "var(--primary-foreground)",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
       },
       borderRadius: {
         lg: "var(--radius)",
