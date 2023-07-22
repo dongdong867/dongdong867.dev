@@ -29,11 +29,13 @@ module.exports = {
         purple: "var(--purple)",
         pink: "var(--pink)",
         brown: "var(--brown)",
+        neutral: "var(--neutral)",
+        black: "var(--black)",
+        white: "var(--white)",
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        neutral: "var(--neutral)",
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
