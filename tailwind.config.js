@@ -17,6 +17,11 @@ module.exports = {
     },
     extend: {
       colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+
         red: "var(--red)",
         orange: "var(--orange)",
         yellow: "var(--yellow)",
@@ -33,13 +38,21 @@ module.exports = {
         black: "var(--black)",
         white: "var(--white)",
 
+        gray: "var(--gray)",
+        systemGray2: "var(--systemGray2)",
+        systemGray3: "var(--systemGray3)",
+        systemGray4: "var(--systemGray4)",
+        systemGray5: "var(--systemGray5)",
+        systemGray6: "var(--systemGray6)",
+        systemGray7: "var(--systemGray7)",
+        systemGray8: "var(--systemGray8)",
+        systemGray9: "var(--systemGray9)",
+        systemGray10: "var(--systemGray10)",
+        systemGray11: "var(--systemGray11)",
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        primary: "var(--primary)",
-        secondary: "var(--secondary)",
       },
       borderRadius: {
         lg: "var(--radius)",
