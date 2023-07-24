@@ -41,11 +41,11 @@ const ThemeProvider = () => {
       <DropdownMenuTrigger asChild>
         <Button
           ref={handleRef}
-          className="w-9 h-9 p-0 bg-white/0 text-primary text-xl hover:bg-muted-foreground/30 hover:cursor-none"
+          className="w-9 h-9 p-0 bg-transparent text-xl hover:bg-gray/50 hover:cursor-none focus-visible:ring-transparent focus-visible:ring-offset-0"
           onMouseMove={(e) => {
             if (e.clientX < width && e.clientY < height) {
-              setClientX(e.clientX / 3);
-              setClientY(e.clientY / 3);
+              setClientX(e.clientX / 2);
+              setClientY(e.clientY / 2);
             }
           }}
           onMouseLeave={() => {
@@ -58,13 +58,13 @@ const ThemeProvider = () => {
               <LuSun
                 className="dark:hidden"
                 style={{
-                  transform: `translate((${clientX}-20)px, (${clientY}-20)px)`,
+                  transform: `translate(${clientX}%, ${clientY}%)`,
                 }}
               />
               <LuMoon
                 className="hidden dark:inline"
                 style={{
-                  transform: `translate((${clientX}-20)px, (${clientY}-20)px)`,
+                  transform: `translate(${clientX}%, ${clientY}%)`,
                 }}
               />
             </>
@@ -78,14 +78,23 @@ const ThemeProvider = () => {
           )}
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
-        <DropdownMenuItem onClick={() => setMode("light")}>
+      <DropdownMenuContent className="bg-background">
+        <DropdownMenuItem
+          onClick={() => setMode("light")}
+          className="hover:bg-gray"
+        >
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setMode("dark")}>
+        <DropdownMenuItem
+          onClick={() => setMode("dark")}
+          className="hover:bg-gray"
+        >
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setMode("system")}>
+        <DropdownMenuItem
+          onClick={() => setMode("system")}
+          className="hover:bg-gray"
+        >
           System
         </DropdownMenuItem>
       </DropdownMenuContent>
