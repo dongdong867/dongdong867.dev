@@ -82,9 +82,7 @@
     --gray-800: 44 44 46;
     --gray-900: 28 28 30;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
