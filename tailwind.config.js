@@ -16,6 +16,13 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-Lexend)"],
+        serif: ["var(--font-Lexend)"],
+        mono: ["var(--font-SourceCodePro)"],
+        display: ["var(--font-Montserrat)"],
+        body: ["var(--font-Lexend)"],
+      },
       colors: {
         background: "rgb(var(--background))",
         foreground: "rgb(var(--foreground))",
