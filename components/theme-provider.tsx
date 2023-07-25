@@ -45,7 +45,7 @@ const ThemeProvider = () => {
       <DropdownMenuTrigger asChild>
         <Button
           ref={handleRef}
-          className="w-9 h-9 p-0 bg-transparent text-xl hover:bg-gray/50 hover:cursor-none focus-visible:ring-transparent focus-visible:ring-offset-0"
+          className="w-10 h-10 p-0 bg-transparent text-3xl hover:bg-gray/50 hover:cursor-none focus-visible:ring-transparent focus-visible:ring-offset-0"
           onMouseMove={(e) => {
             if (e.clientX < left + width / 2 && e.clientY < top + height / 2) {
               setClientX(((e.clientX - left - width) / width) * 20);
@@ -53,18 +53,18 @@ const ThemeProvider = () => {
               return;
             }
             if (e.clientX < left + width && e.clientY < top + height / 2) {
-              setClientX(((e.clientX - left - width / 2) / width) * 20);
+              setClientX(((e.clientX - left - width / 2) / width) * 40);
               setClientY(((e.clientY - top - height) / height) * 20);
               return;
             }
             if (e.clientX < left + width / 2 && e.clientY < top + height) {
               setClientX(((e.clientX - left - width) / width) * 20);
-              setClientY(((e.clientY - top - height / 2) / height) * 20);
+              setClientY(((e.clientY - top - height / 2) / height) * 40);
               return;
             }
             if (e.clientX < left + width && e.clientY < top + height) {
-              setClientX(((e.clientX - left - width / 2) / width) * 20);
-              setClientY(((e.clientY - top - height / 2) / height) * 20);
+              setClientX(((e.clientX - left - width / 2) / width) * 40);
+              setClientY(((e.clientY - top - height / 2) / height) * 40);
             }
           }}
           onMouseLeave={() => {
