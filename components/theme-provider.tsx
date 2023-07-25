@@ -13,6 +13,8 @@ import { useEffect, useState } from "react";
 const ThemeProvider = () => {
   const [mode, setMode] = useState("system");
 
+  const [top, setTop] = useState(0);
+  const [left, setLeft] = useState(0);
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
 
@@ -21,6 +23,8 @@ const ThemeProvider = () => {
 
   const handleRef = (element: HTMLButtonElement) => {
     if (element) {
+      setTop(element.offsetTop);
+      setLeft(element.offsetLeft);
       setWidth(element.offsetWidth);
       setHeight(element.offsetHeight);
     }
@@ -43,9 +47,24 @@ const ThemeProvider = () => {
           ref={handleRef}
           className="w-9 h-9 p-0 bg-transparent text-xl hover:bg-gray/50 hover:cursor-none focus-visible:ring-transparent focus-visible:ring-offset-0"
           onMouseMove={(e) => {
-            if (e.clientX < width && e.clientY < height) {
-              setClientX(e.clientX / 2);
-              setClientY(e.clientY / 2);
+            if (e.clientX < left + width / 2 && e.clientY < top + height / 2) {
+              setClientX(((e.clientX - left - width) / width) * 20);
+              setClientY(((e.clientY - top - height) / height) * 20);
+              return;
+            }
+            if (e.clientX < left + width && e.clientY < top + height / 2) {
+              setClientX(((e.clientX - left - width / 2) / width) * 20);
+              setClientY(((e.clientY - top - height) / height) * 20);
+              return;
+            }
+            if (e.clientX < left + width / 2 && e.clientY < top + height) {
+              setClientX(((e.clientX - left - width) / width) * 20);
+              setClientY(((e.clientY - top - height / 2) / height) * 20);
+              return;
+            }
+            if (e.clientX < left + width && e.clientY < top + height) {
+              setClientX(((e.clientX - left - width / 2) / width) * 20);
+              setClientY(((e.clientY - top - height / 2) / height) * 20);
             }
           }}
           onMouseLeave={() => {
