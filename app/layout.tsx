@@ -1,3 +1,4 @@
+import Navbar from "@/components/navbar";
 import "./globals.css";
 import { Montserrat, Lexend, Source_Code_Pro } from "next/font/google";
 
@@ -34,7 +35,10 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.variable} ${lexend.variable} ${sourceCodePro.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
