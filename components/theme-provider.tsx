@@ -45,7 +45,7 @@ const ThemeProvider = () => {
       <DropdownMenuTrigger asChild>
         <Button
           ref={handleRef}
-          className="w-10 h-10 p-0 bg-transparent text-3xl hover:bg-gray/50 hover:cursor-none focus-visible:ring-transparent focus-visible:ring-offset-0"
+          className="w-10 h-10 p-0 bg-transparent text-2xl hover:bg-gray/50 hover:cursor-none focus-visible:ring-transparent focus-visible:ring-offset-0"
           onMouseMove={(e) => {
             if (e.clientX < left + width / 2 && e.clientY < top + height / 2) {
               setClientX(((e.clientX - left - width) / width) * 20);
