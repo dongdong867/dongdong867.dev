@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
 
 type Props = {
@@ -17,19 +17,20 @@ const TranslatableContextButton = ({ className = "", children }: Props) => {
   const [translateX, setTranslateX] = useState(0);
   const [translateY, setTranslateY] = useState(0);
 
-  const handleRef = (element: HTMLButtonElement) => {
-    if (element) {
-      setTop(element.offsetTop);
-      setLeft(element.offsetLeft);
-      setWidth(element.offsetWidth);
-      setHeight(element.offsetHeight);
+  const ref = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    if (ref.current) {
+      setTop(ref.current.offsetTop);
+      setLeft(ref.current.offsetLeft);
+      setWidth(ref.current.offsetWidth);
+      setHeight(ref.current.offsetHeight);
     }
-  };
+  }, []);
 
   return (
     <Button
-      ref={handleRef}
-      className={`${className}`}
+      ref={ref}
+      className={`${className} bg-transparent hover:bg-gray/50 hover:cursor-none`}
       onMouseMove={(e) => {
         if (e.clientX < left + width / 2 && e.clientY < top + height / 2) {
           setTranslateX(((e.clientX - left - width) / width) * 20);
