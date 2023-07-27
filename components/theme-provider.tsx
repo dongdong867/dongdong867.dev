@@ -26,16 +26,18 @@ const ThemeProvider = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <TranslatableContextButton className="w-10 h-10 p-0 bg-transparent text-2xl hover:bg-gray/50 hover:cursor-none focus-visible:ring-transparent focus-visible:ring-offset-0">
-          {mode !== "system" ? (
-            <>
-              <LuSun className="dark:hidden" />
-              <LuMoon className="hidden dark:inline" />
-            </>
-          ) : (
-            <LuMonitor />
-          )}
-        </TranslatableContextButton>
+        <div>
+          <TranslatableContextButton className="w-10 h-10 p-0 text-2xl focus-visible:ring-transparent focus-visible:ring-offset-0">
+            {mode !== "system" ? (
+              <>
+                <LuSun className="dark:hidden" />
+                <LuMoon className="hidden dark:inline" />
+              </>
+            ) : (
+              <LuMonitor />
+            )}
+          </TranslatableContextButton>
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-background">
         <DropdownMenuItem
