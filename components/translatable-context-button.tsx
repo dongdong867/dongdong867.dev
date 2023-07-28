@@ -33,23 +33,23 @@ const TranslatableContextButton = ({ className = "", children }: Props) => {
       className={`${className} bg-transparent hover:bg-gray/50 hover:cursor-none`}
       onMouseMove={(e) => {
         if (e.clientX < left + width / 2 && e.clientY < top + height / 2) {
-          setTranslateX(((e.clientX - left - width) / width) * 20);
-          setTranslateY(((e.clientY - top - height) / height) * 20);
+          setTranslateX(((e.clientX - left - width) / width) * 10);
+          setTranslateY(((e.clientY - top - height) / height) * 10);
           return;
         }
         if (e.clientX < left + width && e.clientY < top + height / 2) {
-          setTranslateX(((e.clientX - left - width / 2) / width) * 40);
-          setTranslateY(((e.clientY - top - height) / height) * 20);
+          setTranslateX(((e.clientX - left - width / 2) / width) * 20);
+          setTranslateY(((e.clientY - top - height) / height) * 10);
           return;
         }
         if (e.clientX < left + width / 2 && e.clientY < top + height) {
-          setTranslateX(((e.clientX - left - width) / width) * 20);
-          setTranslateY(((e.clientY - top - height / 2) / height) * 40);
+          setTranslateX(((e.clientX - left - width) / width) * 10);
+          setTranslateY(((e.clientY - top - height / 2) / height) * 20);
           return;
         }
         if (e.clientX < left + width && e.clientY < top + height) {
-          setTranslateX(((e.clientX - left - width / 2) / width) * 40);
-          setTranslateY(((e.clientY - top - height / 2) / height) * 40);
+          setTranslateX(((e.clientX - left - width / 2) / width) * 20);
+          setTranslateY(((e.clientY - top - height / 2) / height) * 20);
         }
       }}
       onMouseLeave={() => {
