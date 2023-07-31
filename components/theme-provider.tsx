@@ -27,7 +27,7 @@ const ThemeProvider = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <div>
-          <TranslatableContextButton className="w-10 h-10 p-0 text-2xl focus-visible:ring-transparent focus-visible:ring-offset-0">
+          <TranslatableContextButton className="w-10 h-10 p-2 text-2xl focus-visible:ring-transparent focus-visible:ring-offset-0">
             {mode !== "system" ? (
               <>
                 <LuSun className="dark:hidden" />
