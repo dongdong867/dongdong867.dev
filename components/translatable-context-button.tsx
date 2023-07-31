@@ -30,7 +30,7 @@ const TranslatableContextButton = ({ className = "", children }: Props) => {
   return (
     <Button
       ref={ref}
-      className={`${className} bg-transparent hover:bg-gray/50 hover:cursor-none`}
+      className={`${className} bg-transparent w-max h-max hover:bg-gray/50 hover:cursor-none`}
       onMouseMove={(e) => {
         if (e.clientX < left + width / 2 && e.clientY < top + height / 2) {
           setTranslateX(((e.clientX - left - width) / width) * 10);
