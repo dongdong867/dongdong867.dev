@@ -7,7 +7,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-const TranslatableContextButton = ({ className = "", children }: Props) => {
+const TranslatableContext = ({ className = "", children }: Props) => {
   const [top, setTop] = useState(0);
   const [left, setLeft] = useState(0);
   const [width, setWidth] = useState(0);
@@ -72,4 +72,4 @@ const TranslatableContextButton = ({ className = "", children }: Props) => {
   );
 };
 
-export default TranslatableContextButton;
+export default TranslatableContext;
