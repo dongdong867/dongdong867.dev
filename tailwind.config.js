@@ -62,7 +62,7 @@ module.exports = {
       },
       backgroundImage: {
         "title-gradient":
-          "linear-gradient(90deg, #1bc2ff 0%, #9178ff 25%, #ff78cd 50%, #ff8847 75%, #ffd01a 100%)",
+          "linear-gradient(90deg, rgb(var(--cyan)) 0%, rgb(var(--indigo)) 20%, rgb(var(--purple)) 40%, rgb(var(--red)) 60%, rgb(var(--orange)) 80%, rgb(var(--yellow)) 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",
