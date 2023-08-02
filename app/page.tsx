@@ -11,20 +11,20 @@ export default function Home() {
             Dongdong867.
           </div>
         </div>
-        <div className="flex justify-center place-items-center space-x-1 mt-2">
+        <div className="h-max flex justify-center place-items-center space-x-1 mt-2">
           <TranslatableContextButton className="text-lg">
             A Student
           </TranslatableContextButton>
           <Separator
             orientation="vertical"
-            className="w-0.5 h-6 bg-foreground"
+            className="w-0.5 h-5 bg-foreground"
           />
           <TranslatableContextButton className="text-lg">
             A Full Stack Developer
           </TranslatableContextButton>
           <Separator
             orientation="vertical"
-            className="w-0.5 h-6 bg-foreground"
+            className="w-0.5 h-5 bg-foreground"
           />
           <TranslatableContextButton className="text-lg">
             A UI/ UX Designer
