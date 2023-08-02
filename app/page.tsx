@@ -14,21 +14,27 @@ export default function Home() {
         </div>
         <div className="h-max flex justify-center place-items-center space-x-1">
           <TranslatableContext className="text-base px-3 py-1">
-            <Link href={"/student"}>A Student</Link>
+            <Link href={"/student"} className="cursor-none">
+              A Student
+            </Link>
           </TranslatableContext>
           <Separator
             orientation="vertical"
             className="w-0.5 h-5 bg-foreground"
           />
           <TranslatableContext className="text-base px-3 py-1">
-            <Link href={"/fullstack"}>A Full Stack Developer</Link>
+            <Link href={"/fullstack"} className="cursor-none">
+              A Full Stack Developer
+            </Link>
           </TranslatableContext>
           <Separator
             orientation="vertical"
             className="w-0.5 h-5 bg-foreground"
           />
           <TranslatableContext className="text-base px-3 py-1">
-            <Link href={"/uiux"}>A UI/ UX Designer</Link>
+            <Link href={"/uiux"} className="cursor-none">
+              A UI/ UX Designer
+            </Link>
           </TranslatableContext>
         </div>
       </div>
