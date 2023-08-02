@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Button } from "./ui/button";
 
 type Props = {
   className?: string;
@@ -17,7 +16,7 @@ const TranslatableContextButton = ({ className = "", children }: Props) => {
   const [translateX, setTranslateX] = useState(0);
   const [translateY, setTranslateY] = useState(0);
 
-  const ref = useRef<HTMLButtonElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (ref.current) {
       setTop(ref.current.offsetTop);
@@ -28,28 +27,37 @@ const TranslatableContextButton = ({ className = "", children }: Props) => {
   }, []);
 
   return (
-    <Button
+    <div
       ref={ref}
-      className={`${className} bg-transparent w-max h-max hover:bg-gray/50 hover:cursor-none`}
+      className={`
+        ${className} 
+        w-max h-max
+        inline-flex 
+        items-center justify-center 
+        rounded-md
+        bg-transparent 
+        hover:bg-gray/50 
+        hover:cursor-none
+      `}
       onMouseMove={(e) => {
         if (e.clientX < left + width / 2 && e.clientY < top + height / 2) {
-          setTranslateX(((e.clientX - left - width) / width) * 10);
-          setTranslateY(((e.clientY - top - height) / height) * 10);
+          setTranslateX(((e.clientX - left - width) / width) * 5);
+          setTranslateY(((e.clientY - top - height) / height) * 2.5);
           return;
         }
         if (e.clientX < left + width && e.clientY < top + height / 2) {
-          setTranslateX(((e.clientX - left - width / 2) / width) * 20);
-          setTranslateY(((e.clientY - top - height) / height) * 10);
+          setTranslateX(((e.clientX - left - width / 2) / width) * 10);
+          setTranslateY(((e.clientY - top - height) / height) * 2.5);
           return;
         }
         if (e.clientX < left + width / 2 && e.clientY < top + height) {
-          setTranslateX(((e.clientX - left - width) / width) * 10);
-          setTranslateY(((e.clientY - top - height / 2) / height) * 20);
+          setTranslateX(((e.clientX - left - width) / width) * 5);
+          setTranslateY(((e.clientY - top - height / 2) / height) * 5);
           return;
         }
         if (e.clientX < left + width && e.clientY < top + height) {
-          setTranslateX(((e.clientX - left - width / 2) / width) * 20);
-          setTranslateY(((e.clientY - top - height / 2) / height) * 20);
+          setTranslateX(((e.clientX - left - width / 2) / width) * 10);
+          setTranslateY(((e.clientY - top - height / 2) / height) * 5);
         }
       }}
       onMouseLeave={() => {
@@ -57,10 +65,10 @@ const TranslatableContextButton = ({ className = "", children }: Props) => {
         setTranslateY(0);
       }}
     >
-      <div style={{ transform: `translate(${translateX}%, ${translateY}%)` }}>
+      <div style={{ transform: `translate(${translateX}px, ${translateY}px)` }}>
         {children}
       </div>
-    </Button>
+    </div>
   );
 };
 
