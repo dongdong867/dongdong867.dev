@@ -11,7 +11,7 @@ export default function Home() {
             Dongdong867.
           </div>
         </div>
-        <div className="h-max flex justify-center place-items-center space-x-1 mt-2">
+        <div className="h-max flex justify-center place-items-center space-x-1">
           <TranslatableContextButton className="text-base">
             A Student
           </TranslatableContextButton>
