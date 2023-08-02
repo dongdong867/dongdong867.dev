@@ -36,8 +36,8 @@ const Navbar = () => (
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-      {/* </TranslatableContextButton> */}
-      {/* <TranslatableContextButton className="text-xl p-3"> */}
+      {/* </TranslatableContext> */}
+      {/* <TranslatableContext className="text-xl p-3"> */}
       {/* <Link href={"/works"}>Works</Link> */}
       <AlertDialog>
         <AlertDialogTrigger>Works</AlertDialogTrigger>
@@ -50,8 +50,8 @@ const Navbar = () => (
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-      {/* </TranslatableContextButton> */}
-      {/* <TranslatableContextButton className="text-xl p-3"> */}
+      {/* </TranslatableContext> */}
+      {/* <TranslatableContext className="text-xl p-3"> */}
       {/* <Link href={"/connect"}>Connect</Link> */}
       <AlertDialog>
         <AlertDialogTrigger>Connect</AlertDialogTrigger>
@@ -64,7 +64,7 @@ const Navbar = () => (
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-      {/* </TranslatableContextButton> */}
+      {/* </TranslatableContext> */}
     </div>
   </div>
 );
