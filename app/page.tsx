@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="w-screen h-[calc(100vh-7.25rem)] text-center flex justify-center place-items-center">
       <div>
-        <div className="font-display font-black -space-y-4">
+        <div className="font-display font-black -space-y-4  cursor-default">
           <div className="text-3xl">Hi, I'm</div>
           <div className="h-full text-6xl leading-normal text-transparent bg-title-gradient bg-clip-text">
             Dongdong867.
