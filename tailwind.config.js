@@ -60,6 +60,10 @@ module.exports = {
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
       },
+      backgroundImage: {
+        "title-gradient":
+          "linear-gradient(90deg, #1bc2ff 0%, #9178ff 25%, #ff78cd 50%, #ff8847 75%, #ffd01a 100%)",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -81,5 +85,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss"),
+    require("tailwindcss-animate"),
+    require("autoprefixer"),
+  ],
 };
