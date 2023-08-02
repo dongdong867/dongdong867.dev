@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { useEffect, useState } from "react";
-import TranslatableContextButton from "./translatable-context-button";
+import TranslatableContext from "./translatable-context";
 
 const ThemeProvider = () => {
   const [mode, setMode] = useState("system");
@@ -27,7 +27,7 @@ const ThemeProvider = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <div>
-          <TranslatableContextButton className="w-10 h-10 p-2 text-2xl focus-visible:ring-transparent focus-visible:ring-offset-0">
+          <TranslatableContext className="w-10 h-10 p-2 text-2xl focus-visible:ring-transparent focus-visible:ring-offset-0">
             {mode !== "system" ? (
               <>
                 <LuSun className="dark:hidden" />
@@ -36,7 +36,7 @@ const ThemeProvider = () => {
             ) : (
               <LuMonitor />
             )}
-          </TranslatableContextButton>
+          </TranslatableContext>
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-background">

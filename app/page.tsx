@@ -1,5 +1,6 @@
-import TranslatableContextButton from "@/components/translatable-context-button";
+import TranslatableContext from "@/components/translatable-context";
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,23 +13,23 @@ export default function Home() {
           </div>
         </div>
         <div className="h-max flex justify-center place-items-center space-x-1">
-          <TranslatableContextButton className="text-base">
-            A Student
-          </TranslatableContextButton>
+          <TranslatableContext className="text-base px-3 py-1">
+            <Link href={"/student"}>A Student</Link>
+          </TranslatableContext>
           <Separator
             orientation="vertical"
             className="w-0.5 h-5 bg-foreground"
           />
-          <TranslatableContextButton className="text-base">
-            A Full Stack Developer
-          </TranslatableContextButton>
+          <TranslatableContext className="text-base px-3 py-1">
+            <Link href={"/fullstack"}>A Full Stack Developer</Link>
+          </TranslatableContext>
           <Separator
             orientation="vertical"
             className="w-0.5 h-5 bg-foreground"
           />
-          <TranslatableContextButton className="text-base">
-            A UI/ UX Designer
-          </TranslatableContextButton>
+          <TranslatableContext className="text-base px-3 py-1">
+            <Link href={"/uiux"}>A UI/ UX Designer</Link>
+          </TranslatableContext>
         </div>
       </div>
     </div>

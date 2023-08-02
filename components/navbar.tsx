@@ -1,7 +1,7 @@
 import ThemeProvider from "./theme-provider";
 import Image from "next/image";
 import dong_logo from "@/public/dong-logo.svg";
-import TranslatableContextButton from "./translatable-context-button";
+import TranslatableContext from "./translatable-context";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -23,7 +23,7 @@ const Navbar = () => (
     />
     <div className="flex place-items-center space-x-4">
       <ThemeProvider />
-      {/* <TranslatableContextButton className="text-xl p-3"> */}
+      {/* <TranslatableContext className="text-xl p-3"> */}
       {/* <Link href={"/about"}>About</Link> */}
       <AlertDialog>
         <AlertDialogTrigger>About</AlertDialogTrigger>
