@@ -12,7 +12,7 @@ export default function Home() {
             Dongdong867.
           </div>
         </div>
-        <div className="h-max flex justify-center place-items-center space-x-1">
+        <div className="h-max flex justify-center place-items-center space-x-1 font-semibold">
           <TranslatableContext className="text-base px-3 py-1">
             <Link href={"/student"} className="cursor-none">
               A Student
