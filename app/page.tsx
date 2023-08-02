@@ -7,26 +7,26 @@ export default function Home() {
       <div>
         <div className="font-display font-black -space-y-4">
           <div className="text-3xl">Hi, I'm</div>
-          <div className="h-full text-7xl leading-normal text-transparent bg-title-gradient bg-clip-text">
+          <div className="h-full text-6xl leading-normal text-transparent bg-title-gradient bg-clip-text">
             Dongdong867.
           </div>
         </div>
         <div className="h-max flex justify-center place-items-center space-x-1 mt-2">
-          <TranslatableContextButton className="text-lg">
+          <TranslatableContextButton className="text-base">
             A Student
           </TranslatableContextButton>
           <Separator
             orientation="vertical"
             className="w-0.5 h-5 bg-foreground"
           />
-          <TranslatableContextButton className="text-lg">
+          <TranslatableContextButton className="text-base">
             A Full Stack Developer
           </TranslatableContextButton>
           <Separator
             orientation="vertical"
             className="w-0.5 h-5 bg-foreground"
           />
-          <TranslatableContextButton className="text-lg">
+          <TranslatableContextButton className="text-base">
             A UI/ UX Designer
           </TranslatableContextButton>
         </div>
