@@ -5,7 +5,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Home() {
   return (
-    <div className="w-screen h-[calc(100vh-7.25rem)] text-center flex justify-center place-items-center">
+    <div className="w-screen h-[calc(100vh-7.5rem)] text-center flex justify-center place-items-center max-sm:h-[calc(100vh-8.25rem)]">
       <div>
         <div className="font-display font-black -space-y-2 cursor-default md:-space-y-4">
           <div className="text-xl md:text-3xl">Hi, I'm</div>
