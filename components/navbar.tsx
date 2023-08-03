@@ -4,7 +4,7 @@ import dong_logo from "@/public/dong-logo.svg";
 import NavigationMenu from "./navigation-menu";
 
 const Navbar = () => (
-  <div className="flex justify-between place-items-center mx-10 mt-4 max-sm:mx-6 max-sm:mt-6">
+  <div className="flex justify-between place-items-center mx-10 mt-4 max-sm:mx-6">
     <Image
       src={dong_logo}
       alt="dong-logo"
