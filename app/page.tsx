@@ -13,6 +13,7 @@ export default function Home() {
             className="
               h-full 
               text-4xl text-transparent 
+              drop-shadow-md
               leading-normal 
               bg-title-gradient bg-clip-text 
               md:text-6xl md:leading-normal"
