@@ -26,8 +26,9 @@ export default function Home() {
             m-auto 
             font-semibold 
             flex justify-center place-items-center 
-            max-sm:flex-col max-sm:place-items-start 
+            max-sm:w-4/5
             max-sm:mt-2
+            max-sm:flex-col max-sm:place-items-start
             md:space-x-1"
         >
           <TranslatableContext className="text-base px-3 py-1">
@@ -43,7 +44,6 @@ export default function Home() {
             orientation="vertical"
             className="w-0.5 h-5 bg-foreground max-sm:hidden"
           />
-          <Separator className="w-full h-0.5 bg-foreground sm:hidden" />
           <TranslatableContext className="text-base px-3 py-1">
             <Link href={"/fullstack"} className="cursor-none">
               <div className="w-full flex justify-between place-items-center space-x-1 sm:hidden">
@@ -57,7 +57,6 @@ export default function Home() {
             orientation="vertical"
             className="w-0.5 h-5 bg-foreground max-sm:hidden"
           />
-          <Separator className="w-full h-0.5 bg-foreground sm:hidden" />
           <TranslatableContext className="text-base px-3 py-1">
             <Link href={"/uiux"} className="cursor-none">
               <div className="w-full flex justify-between place-items-center space-x-1 sm:hidden">
