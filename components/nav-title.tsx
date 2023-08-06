@@ -6,11 +6,12 @@ import { Separator } from "./ui/separator";
 const NavTitle = () => {
   return (
     <div>
-      <div className="font-display font-black -space-y-2 cursor-default md:-space-y-4">
+      <div className="w-full m-auto text-center font-display font-black -space-y-2 cursor-default md:-space-y-4">
         <div className="text-xl md:text-3xl">Hi, I'm</div>
         <div
           className="
-              h-full 
+              w-max h-full
+              m-auto
               text-4xl text-transparent 
               drop-shadow-md
               leading-normal 
@@ -22,7 +23,7 @@ const NavTitle = () => {
       </div>
       <div
         className="
-            w-full h-max 
+            w-full h-max
             m-auto 
             font-semibold 
             flex justify-center place-items-center 
