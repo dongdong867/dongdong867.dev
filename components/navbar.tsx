@@ -8,8 +8,8 @@ const Navbar = () => (
     <Image
       src={dong_logo}
       alt="dong-logo"
-      width={2000}
-      height={2000}
+      width={4000}
+      height={1000}
       className="w-max h-5 ring-0 dark:invert"
     />
     <div className="flex place-items-center">
