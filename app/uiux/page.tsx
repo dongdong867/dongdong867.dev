@@ -6,7 +6,7 @@ const UIUXPage = () => {
     <div>
       <div className="w-full h-full">
         <div className="w-max h-max m-auto my-10 rounded-[3rem] overflow-hidden">
-          <video src="/logo-animation.mp4" autoPlay muted loop />
+          <video src="/uiux/logo-animation.mp4" autoPlay muted loop />
         </div>
         <NavTitle />
       </div>
