@@ -63,6 +63,8 @@ module.exports = {
       backgroundImage: {
         "title-gradient":
           "linear-gradient(90deg, rgb(var(--cyan)) 0%, rgb(var(--indigo)) 20%, rgb(var(--purple)) 40%, rgb(var(--red)/.9) 60%, rgb(var(--orange)) 80%, rgb(var(--yellow)) 100%)",
+        "coming-soon-icon-gradient":
+          "conic-gradient(from 0deg at 48.50% 50.00%, #000 0deg, #5A5A5A 26.24999910593033deg, #000 88.12500178813934deg, #3A3A3A 146.25deg, #000 204.37499284744263deg, #5E5E5E 268.1250071525574deg, #000 331.875deg)",
       },
       borderRadius: {
         lg: "var(--radius)",
