@@ -77,6 +77,17 @@ const DesignsGrid = () => {
           className="w-1/2 h-auto aspect-auto drop-shadow-[0_0_15px_#cfcfcf]"
         />
       </div>
+      <div className="col-span-3 row-span-2 flex flex-col justify-between place-items-center space-y-6">
+        <div className="w-full h-1/2 flex justify-center place-items-center rounded-[3rem] bg-neutral">
+          <Image
+            src={"/uiux/nccu-job-bank.svg"}
+            alt="NCCU Job Bank"
+            width={2000}
+            height={2000}
+            className="w-1/2 h-auto aspect-auto"
+          />
+        </div>
+      </div>
     </div>
   );
 };
