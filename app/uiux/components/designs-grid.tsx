@@ -68,6 +68,15 @@ const DesignsGrid = () => {
           className="w-4/5 h-auto aspect-auto dark:invert"
         />
       </div>
+      <div className="col-span-5 row-span-2 aspect-square flex justify-center place-items-center rounded-[3rem] bg-coming-soon-icon-gradient">
+        <Image
+          src={"/uiux/coming-soon.svg"}
+          alt="coming soon"
+          width={2000}
+          height={2000}
+          className="w-1/2 h-auto aspect-auto drop-shadow-[0_0_15px_#cfcfcf]"
+        />
+      </div>
     </div>
   );
 };
