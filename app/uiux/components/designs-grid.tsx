@@ -50,6 +50,15 @@ const DesignsGrid = () => {
           className="w-4/5 h-auto aspect-auto"
         />
       </div>
+      <div className="h-full aspect-[1/2] col-span-4 row-span-3 flex flex-col justify-center place-items-center rounded-[3rem] bg-neutral">
+        <Image
+          src={"/uiux/go-cafe.png"}
+          alt="go cafe"
+          width={2000}
+          height={6000}
+          className="w-4/5 h-auto aspect-auto"
+        />
+      </div>
     </div>
   );
 };
