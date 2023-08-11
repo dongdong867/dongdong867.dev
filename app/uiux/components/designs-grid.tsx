@@ -12,6 +12,17 @@ const DesignsGrid = () => {
           className="w-2/3 h-auto aspect-auto"
         />
       </div>
+      <div className="col-span-3 row-span-2 flex flex-col justify-between place-items-center space-y-6">
+        <div className="w-full h-1/2 flex justify-center place-items-center rounded-[3rem] bg-neutral">
+          <Image
+            src={"/uiux/lets-beat-google.svg"}
+            alt="let's beat google"
+            width={2000}
+            height={2000}
+            className="w-5/12 h-auto aspect-auto"
+          />
+        </div>
+      </div>
     </div>
   );
 };
