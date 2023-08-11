@@ -22,6 +22,15 @@ const DesignsGrid = () => {
             className="w-5/12 h-auto aspect-auto"
           />
         </div>
+        <div className="w-full h-1/2 flex justify-center place-items-center rounded-[3rem] bg-neutral">
+          <Image
+            src={"/uiux/github-issue-manager.svg"}
+            alt="github issue manager"
+            width={2000}
+            height={2000}
+            className="w-5/12 h-auto aspect-auto"
+          />
+        </div>
       </div>
     </div>
   );
