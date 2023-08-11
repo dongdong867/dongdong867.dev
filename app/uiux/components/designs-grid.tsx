@@ -59,6 +59,15 @@ const DesignsGrid = () => {
           className="w-4/5 h-auto aspect-auto"
         />
       </div>
+      <div className="w-full h-full aspect-[3/1] col-span-8 row-span-1 flex justify-center place-items-center rounded-[3rem] bg-neutral">
+        <Image
+          src={"/dong-logo.svg"}
+          alt="dong logo"
+          width={4000}
+          height={2000}
+          className="w-4/5 h-auto aspect-auto dark:invert"
+        />
+      </div>
     </div>
   );
 };
