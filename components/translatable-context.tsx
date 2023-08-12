@@ -19,8 +19,8 @@ const TranslatableContext = ({ className = "", children }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (ref.current) {
-      setTop(ref.current.getBoundingClientRect().top + window.scrollX);
-      setLeft(ref.current.getBoundingClientRect().left + window.scrollY);
+      setTop(ref.current.getBoundingClientRect().top + window.scrollY);
+      setLeft(ref.current.getBoundingClientRect().left + window.scrollX);
       setWidth(ref.current.clientWidth);
       setHeight(ref.current.clientHeight);
     }
