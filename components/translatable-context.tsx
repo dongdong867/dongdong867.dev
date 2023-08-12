@@ -19,10 +19,10 @@ const TranslatableContext = ({ className = "", children }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (ref.current) {
-      setTop(ref.current.offsetTop);
-      setLeft(ref.current.offsetLeft);
-      setWidth(ref.current.offsetWidth);
-      setHeight(ref.current.offsetHeight);
+      setTop(ref.current.getBoundingClientRect().top + window.scrollX);
+      setLeft(ref.current.getBoundingClientRect().left + window.scrollY);
+      setWidth(ref.current.clientWidth);
+      setHeight(ref.current.clientHeight);
     }
   }, []);
 
@@ -40,32 +40,15 @@ const TranslatableContext = ({ className = "", children }: Props) => {
         hover:cursor-none
       `}
       onMouseMove={(e) => {
-        if (e.clientX < left + width / 2 && e.clientY < top + height / 2) {
-          setTranslateX(((e.clientX - left - width) / width) * 5);
-          setTranslateY(((e.clientY - top - height) / height) * 2.5);
-          return;
-        }
-        if (e.clientX < left + width && e.clientY < top + height / 2) {
-          setTranslateX(((e.clientX - left - width / 2) / width) * 10);
-          setTranslateY(((e.clientY - top - height) / height) * 2.5);
-          return;
-        }
-        if (e.clientX < left + width / 2 && e.clientY < top + height) {
-          setTranslateX(((e.clientX - left - width) / width) * 5);
-          setTranslateY(((e.clientY - top - height / 2) / height) * 5);
-          return;
-        }
-        if (e.clientX < left + width && e.clientY < top + height) {
-          setTranslateX(((e.clientX - left - width / 2) / width) * 10);
-          setTranslateY(((e.clientY - top - height / 2) / height) * 5);
-        }
+        setTranslateX(((e.pageX - left - width / 2) / width) * 20);
+        setTranslateY(((e.pageY - top - height / 2) / height) * 20);
       }}
       onMouseLeave={() => {
         setTranslateX(0);
         setTranslateY(0);
       }}
     >
-      <div style={{ transform: `translate(${translateX}px, ${translateY}px)` }}>
+      <div style={{ transform: `translate(${translateX}%, ${translateY}%)` }}>
         {children}
       </div>
     </div>
