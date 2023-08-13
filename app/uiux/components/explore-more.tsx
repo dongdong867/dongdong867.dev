@@ -8,7 +8,7 @@ const ExploreMore = () => {
         <div>More in</div>
       </div>
       <TranslatableContext className="p-2 rounded-xl">
-        <div className="text-8xl">WORKS.</div>
+        <div className="text-8xl underline underline-offset-8">WORKS.</div>
       </TranslatableContext>
     </div>
   );
