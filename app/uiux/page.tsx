@@ -6,7 +6,7 @@ const UIUXPage = () => {
   return (
     <div>
       <div className="w-full h-full">
-        <div className="w-4/5 h-max m-auto my-10 rounded-[4rem] overflow-hidden">
+        <div className="w-4/5 h-max m-auto my-10 rounded-[4rem] overflow-hidden max-sm:rounded-3xl">
           <video
             src="/uiux/logo-animation.mp4"
             autoPlay
@@ -17,7 +17,7 @@ const UIUXPage = () => {
         </div>
         <NavTitle />
       </div>
-      <div className="m-8">
+      <div className="my-8">
         <DesignsGrid />
       </div>
       <div>
