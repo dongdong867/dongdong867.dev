@@ -1,5 +1,6 @@
 import NavTitle from "@/components/nav-title";
 import DesignsGrid from "./components/designs-grid";
+import ExploreMore from "./components/explore-more";
 
 const UIUXPage = () => {
   return (
@@ -18,6 +19,9 @@ const UIUXPage = () => {
       </div>
       <div className="m-8">
         <DesignsGrid />
+      </div>
+      <div>
+        <ExploreMore />
       </div>
     </div>
   );
