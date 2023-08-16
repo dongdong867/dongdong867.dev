@@ -27,7 +27,7 @@ const NavTitle = () => {
             m-auto 
             font-semibold 
             flex justify-center place-items-center 
-            max-sm:w-4/5
+            max-sm:w-max
             max-sm:mt-2
             max-sm:flex-col max-sm:place-items-start
             md:space-x-1"
