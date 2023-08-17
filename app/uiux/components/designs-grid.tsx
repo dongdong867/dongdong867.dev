@@ -13,7 +13,7 @@ const DesignsGrid = () => {
         />
       </div>
       <div className="col-span-3 row-span-2 flex flex-col justify-between place-items-center space-y-6 max-sm:space-y-4">
-        <div className="w-full h-1/2 flex justify-center place-items-center rounded-[2rem] bg-neutral max-md:rounded-2xl">
+        <div className="w-full h-1/2 flex justify-center place-items-center rounded-[2rem] bg-neutral/40 max-md:rounded-2xl">
           <Image
             src={"/uiux/lets-beat-google.svg"}
             alt="let's beat google"
@@ -22,7 +22,7 @@ const DesignsGrid = () => {
             className="w-5/12 h-auto aspect-auto"
           />
         </div>
-        <div className="w-full h-1/2 flex justify-center place-items-center rounded-[2rem] bg-neutral max-md:rounded-3xl">
+        <div className="w-full h-1/2 flex justify-center place-items-center rounded-[2rem] bg-neutral/40 max-md:rounded-3xl">
           <Image
             src={"/uiux/github-issue-manager.svg"}
             alt="github issue manager"
@@ -32,7 +32,7 @@ const DesignsGrid = () => {
           />
         </div>
       </div>
-      <div className="w-full h-full aspect-[3/1] col-span-8 row-span-1 flex justify-center place-items-center rounded-[2rem] bg-neutral max-sm:rounded-3xl">
+      <div className="w-full h-full aspect-[3/1] col-span-8 row-span-1 flex justify-center place-items-center rounded-[2rem] bg-neutral/40 max-sm:rounded-3xl">
         <Image
           src={"/uiux/tricargo-logo.svg"}
           alt="tricargo"
@@ -41,7 +41,7 @@ const DesignsGrid = () => {
           className="w-4/5 h-auto aspect-auto"
         />
       </div>
-      <div className="h-full aspect-[1/2] col-span-4 row-span-3 flex flex-col justify-center place-items-center rounded-[2rem] bg-neutral max-sm:rounded-3xl">
+      <div className="h-full aspect-[1/2] col-span-4 row-span-3 flex flex-col justify-center place-items-center rounded-[2rem] bg-neutral/40 max-sm:rounded-3xl">
         <Image
           src={"/uiux/tricargo.png"}
           alt="tricargo"
@@ -51,7 +51,7 @@ const DesignsGrid = () => {
         />
       </div>
 
-      <div className="h-full aspect-[1/2] col-span-4 row-span-3 flex flex-col justify-center place-items-center rounded-[2rem] bg-neutral max-sm:rounded-3xl">
+      <div className="h-full aspect-[1/2] col-span-4 row-span-3 flex flex-col justify-center place-items-center rounded-[2rem] bg-neutral/40 max-sm:rounded-3xl">
         <Image
           src={"/uiux/go-cafe.png"}
           alt="go cafe"
@@ -60,7 +60,7 @@ const DesignsGrid = () => {
           className="w-4/5 h-auto aspect-auto"
         />
       </div>
-      <div className="w-full h-full aspect-[3/1] col-span-8 row-span-1 flex justify-center place-items-center rounded-[2rem] bg-neutral max-sm:rounded-3xl">
+      <div className="w-full h-full aspect-[3/1] col-span-8 row-span-1 flex justify-center place-items-center rounded-[2rem] bg-neutral/40 max-sm:rounded-3xl">
         <Image
           src={"/dong-logo.svg"}
           alt="dong logo"
@@ -70,7 +70,7 @@ const DesignsGrid = () => {
         />
       </div>
       <div className="col-span-3 row-span-2 flex flex-col justify-between place-items-center space-y-6">
-        <div className="w-full h-1/2 flex justify-center place-items-center rounded-[2rem] bg-neutral max-sm:rounded-3xl">
+        <div className="w-full h-1/2 flex justify-center place-items-center rounded-[2rem] bg-neutral/40 max-sm:rounded-3xl">
           <Image
             src={"/uiux/nccu-job-bank.svg"}
             alt="NCCU Job Bank"
