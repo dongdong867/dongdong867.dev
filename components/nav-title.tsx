@@ -7,7 +7,7 @@ const NavTitle = () => {
   return (
     <div>
       <div className="w-full m-auto text-center font-display font-black -space-y-2 cursor-default md:-space-y-4">
-        <div className="text-xl md:text-3xl">Hi, I'm</div>
+        <div className="text-xl md:text-3xl">Hi, I&apos;m</div>
         <div
           className="
               w-max h-full
