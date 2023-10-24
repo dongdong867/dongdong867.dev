@@ -6,11 +6,20 @@ import { Separator } from "./ui/separator";
 const NavTitle = () => {
   return (
     <div>
-      <div className="w-full m-auto text-center font-display font-black -space-y-2 cursor-default md:-space-y-4">
+      <div
+        className="
+          w-full h-max
+          m-auto
+          text-center font-display font-black
+          -space-y-2
+          cursor-default
+          md:-space-y-4
+        "
+      >
         <div className="text-xl md:text-3xl">Hi, I&apos;m</div>
         <div
           className="
-              w-max h-full
+              w-max 
               m-auto
               text-4xl text-transparent 
               drop-shadow-md
@@ -41,10 +50,12 @@ const NavTitle = () => {
             <div className="max-sm:hidden">A Full Stack Developer</div>
           </Link>
         </TranslatableContext>
+
         <Separator
           orientation="vertical"
           className="w-0.5 h-5 bg-foreground max-sm:hidden"
         />
+
         <TranslatableContext className="text-base px-3 py-1">
           <Link href={"/uiux"} className="cursor-none">
             <div className="w-full flex justify-between place-items-center space-x-1 sm:hidden">
