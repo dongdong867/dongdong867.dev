@@ -10,7 +10,16 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between place-items-center pb-5 mx-10 max-sm:text-xs max-sm:flex-col-reverse">
+    <div
+      className="
+        h-max
+        flex-grow-0 flex
+        justify-between place-items-center
+        pb-5 mx-10
+        max-sm:text-xs
+        max-sm:flex-col-reverse
+      "
+    >
       <div>Copyright © 2023 Dongdong867</div>
       <div className="flex">
         <TranslatableContext className="p-2">
