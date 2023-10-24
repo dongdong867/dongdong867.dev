@@ -24,42 +24,52 @@ const ThemeProvider = () => {
   }, [mode]);
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <div>
-          <TranslatableContext className="w-10 h-10 p-2 text-2xl focus-visible:ring-transparent focus-visible:ring-offset-0">
-            {mode !== "system" ? (
-              <>
-                <LuSun className="dark:hidden" />
-                <LuMoon className="hidden dark:inline" />
-              </>
-            ) : (
-              <LuMonitor />
-            )}
-          </TranslatableContext>
-        </div>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent className="bg-background">
-        <DropdownMenuItem
-          onClick={() => setMode("light")}
-          className="hover:bg-gray"
-        >
-          Light
-        </DropdownMenuItem>
-        <DropdownMenuItem
-          onClick={() => setMode("dark")}
-          className="hover:bg-gray"
-        >
-          Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem
-          onClick={() => setMode("system")}
-          className="hover:bg-gray"
-        >
-          System
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <div className="w-max h-max">
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <div>
+            <TranslatableContext
+              className="
+                w-10 h-10 
+                p-2 
+                text-2xl 
+                focus-visible:ring-transparent 
+                focus-visible:ring-offset-0
+              "
+            >
+              {mode !== "system" ? (
+                <>
+                  <LuSun className="dark:hidden" />
+                  <LuMoon className="hidden dark:inline" />
+                </>
+              ) : (
+                <LuMonitor />
+              )}
+            </TranslatableContext>
+          </div>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent className="bg-background">
+          <DropdownMenuItem
+            onClick={() => setMode("light")}
+            className="hover:bg-gray"
+          >
+            Light
+          </DropdownMenuItem>
+          <DropdownMenuItem
+            onClick={() => setMode("dark")}
+            className="hover:bg-gray"
+          >
+            Dark
+          </DropdownMenuItem>
+          <DropdownMenuItem
+            onClick={() => setMode("system")}
+            className="hover:bg-gray"
+          >
+            System
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    </div>
   );
 };
 
