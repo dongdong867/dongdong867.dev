@@ -84,7 +84,7 @@
   }
 
   * {
-    @apply border-border;
+    @apply w-full h-full m-0 overflow-hidden;
   }
   body {
     @apply bg-background text-foreground;
