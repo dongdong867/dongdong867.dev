@@ -36,7 +36,7 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.variable} ${lexend.variable} ${sourceCodePro.variable}`}
     >
-      <body>
+      <body className="flex flex-col justify-between">
         <Navbar />
         {children}
         <Footer />
