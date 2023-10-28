@@ -18,8 +18,8 @@ const TranslatableContext = ({ className = "", children }: Props) => {
 
   useEffect(() => {
     if (elX >= 0 && elY >= 0 && elX <= width && elY <= height) {
-      setTranslateX(((elX - width / 2) * 15) / width);
-      setTranslateY(((elY - height / 2) * 15) / height);
+      setTranslateX(((elX - width / 2) * 10) / width);
+      setTranslateY(((elY - height / 2) * 10) / height);
     } else {
       setTranslateX(0);
       setTranslateY(0);
