@@ -45,7 +45,7 @@
   }
 
   .dark {
-    --background: 17 24 39;
+    --background: 30 30 30;
     --foreground: 250 250 250;
 
     --border: 217.2 32.6% 17.5%;
@@ -88,5 +88,6 @@
   }
   body {
     @apply w-full h-full m-0 overflow-hidden bg-background text-foreground;
+    cursor: none !important;
   }
 }
