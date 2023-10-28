@@ -15,13 +15,19 @@ const NavigationMenu = () => {
     <div>
       <div className="flex font-medium text-lg max-sm:hidden">
         <TranslatableContext className="p-2">
-          <Link href={"/about"}>About</Link>
+          <Link href={"/about"} className="cursor-none">
+            About
+          </Link>
         </TranslatableContext>
         <TranslatableContext className="p-2">
-          <Link href={"/works"}>Works</Link>
+          <Link href={"/works"} className="cursor-none">
+            Works
+          </Link>
         </TranslatableContext>
         <TranslatableContext className="p-2">
-          <Link href={"/connect"}>Connects</Link>
+          <Link href={"/connect"} className="cursor-none">
+            Connects
+          </Link>
         </TranslatableContext>
       </div>
       <div className="sm:hidden">
