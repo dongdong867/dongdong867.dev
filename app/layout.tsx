@@ -3,6 +3,8 @@ import "./globals.css";
 import { Montserrat, Lexend, Source_Code_Pro } from "next/font/google";
 import Footer from "@/components/footer";
 import Cursor from "@/components/cursor";
+import { headers } from "next/headers";
+import { UAParser } from "ua-parser-js";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -32,6 +34,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const deviceType = new UAParser(headers().get("user-agent") ?? "").getDevice().type;
   return (
     <html
       lang="en"
@@ -41,7 +44,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <Cursor />
+        {(deviceType != "mobile" && deviceType != "tablet") && <Cursor />}
       </body>
     </html>
   );
