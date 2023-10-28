@@ -27,7 +27,15 @@ const TranslatableContext = ({ className = "", children }: Props) => {
   }, [elX, elY, width, height]);
 
   return (
-    <div className="flex flex-col">
+    <div
+      onMouseEnter={() => {
+        document.getElementById("cursor")?.classList.add("opacity-0");
+      }}
+      onMouseLeave={() => {
+        document.getElementById("cursor")?.classList.remove("opacity-0");
+      }}
+      className="flex flex-col"
+    >
       <div ref={elementRef} className="w-max h-max">
         <div ref={ref}>
           <div
