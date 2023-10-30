@@ -26,6 +26,17 @@ const TranslatableContext = ({ className = "", children }: Props) => {
     }
   }, [elX, elY, width, height]);
 
+  const resetCursorEvent = () => {
+    const cursorElement = document.getElementById("cursor")!;
+    cursorElement.classList.remove(
+      "opacity-50",
+      "transition-[top,left]",
+      "lock"
+    );
+    cursorElement.style.width = "40px";
+    cursorElement.style.height = "40px";
+  }
+
   return (
     <div ref={ref}>
       <div
@@ -44,16 +55,8 @@ const TranslatableContext = ({ className = "", children }: Props) => {
           cursorElement.style.left = elementRef.current!.offsetLeft + width / 2 + "px";
           cursorElement.style.top = elementRef.current!.offsetTop + height / 2 + "px";
         }}
-        onMouseLeave={() => {
-          const cursorElement = document.getElementById("cursor")!;
-          cursorElement.classList.remove(
-            "opacity-50",
-            "transition-[top,left]",
-            "lock"
-          );
-          cursorElement.style.width = "40px";
-          cursorElement.style.height = "40px";
-        }}
+        onMouseDown={resetCursorEvent}
+        onMouseLeave={resetCursorEvent}
         ref={elementRef}
         className="w-max h-max flex flex-col p-2"
       >
