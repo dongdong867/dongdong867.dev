@@ -12,7 +12,7 @@ const Navbar = () => (
       height={50}
       className="w-max h-5 ring-0 dark:invert"
     />
-    <div className="flex place-items-center gap-x-2">
+    <div className="flex place-items-center">
       <ThemeProvider />
       <NavigationMenu />
     </div>

@@ -40,7 +40,7 @@ const NavTitle = () => {
             max-sm:flex-col max-sm:place-items-start
             md:space-x-1"
       >
-        <TranslatableContext className="text-base px-3 py-2">
+        <TranslatableContext className="text-base">
           <Link href={"/fullstack"} className="cursor-none">
             <div className="w-full flex justify-between place-items-center space-x-1 sm:hidden">
               <div>A Full Stack Developer</div>
@@ -55,7 +55,7 @@ const NavTitle = () => {
           className="w-0.5 h-5 bg-foreground max-sm:hidden"
         />
 
-        <TranslatableContext className="text-base px-3 py-2">
+        <TranslatableContext className="text-base">
           <Link href={"/uiux"} className="cursor-none">
             <div className="w-full flex justify-between place-items-center space-x-1 sm:hidden">
               <div>A UI/ UX Designer</div>

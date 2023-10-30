@@ -14,27 +14,28 @@ const NavigationMenu = () => {
   return (
     <div>
       <div className="flex font-medium text-lg max-sm:hidden">
-        <TranslatableContext className="p-2">
+        <TranslatableContext>
           <Link href={"/about"} className="cursor-none">
             About
           </Link>
         </TranslatableContext>
-        <TranslatableContext className="p-2">
+        <TranslatableContext>
           <Link href={"/works"} className="cursor-none">
             Works
           </Link>
         </TranslatableContext>
-        <TranslatableContext className="p-2">
+        <TranslatableContext>
           <Link href={"/connect"} className="cursor-none">
             Connects
           </Link>
         </TranslatableContext>
       </div>
+
       <div className="sm:hidden">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <div>
-              <TranslatableContext className="w-10 h-10 p-2">
+              <TranslatableContext className="w-10 h-10">
                 <FiMenu className="text-2xl" />
               </TranslatableContext>
             </div>

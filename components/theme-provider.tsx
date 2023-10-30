@@ -31,7 +31,6 @@ const ThemeProvider = () => {
             <TranslatableContext
               className="
                 w-10 h-10 
-                p-2 
                 text-2xl 
                 focus-visible:ring-transparent 
                 focus-visible:ring-offset-0
