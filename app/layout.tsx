@@ -34,17 +34,23 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const deviceType = new UAParser(headers().get("user-agent") ?? "").getDevice().type;
+  const deviceType = new UAParser(headers().get("user-agent") ?? "").getDevice()
+    .type;
+
   return (
     <html
       lang="en"
       className={`${montserrat.variable} ${lexend.variable} ${sourceCodePro.variable}`}
     >
-      <body className="flex flex-col justify-between">
+      <body className="flex flex-col">
         <Navbar />
-        {children}
+        <div className="grow">{children}</div>
         <Footer />
-        {(deviceType != "mobile" && deviceType != "tablet") && <Cursor />}
+        {deviceType != "mobile" && deviceType != "tablet" ? (
+          <Cursor />
+        ) : (
+          <div id="cursor" className="hidden" />
+        )}
       </body>
     </html>
   );
