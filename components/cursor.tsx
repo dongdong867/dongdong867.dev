@@ -4,11 +4,8 @@ import { useRef } from "react";
 import { useMouse } from "react-use";
 
 const Cursor = () => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const { docX, docY } = useMouse(ref);
-
-  const positionLock = document.getElementById("cursor")?.classList.contains("lock")
-
   return (
     <div
       id="cursor"
@@ -16,8 +13,8 @@ const Cursor = () => {
       style={{
         width: "40px",
         height: "40px",
-        left: positionLock ? "" : docX + "px",
-        top: positionLock ? "" : docY + "px",
+        left: ref.current?.classList.contains("lock") ? "" : docX + "px",
+        top: ref.current?.classList.contains("lock") ? "" : docY + "px",
       }}
       className={`
         absolute
