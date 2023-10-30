@@ -5,24 +5,28 @@ import { useMouse } from "react-use";
 
 const Cursor = () => {
   const ref = useRef(null);
-  const state = useMouse(ref);
+  const { docX, docY } = useMouse(ref);
+
+  const positionLock = document.getElementById("cursor")?.classList.contains("lock")
 
   return (
     <div
       id="cursor"
       ref={ref}
       style={{
-        left: `${state.docX}px`,
-        top: `${state.docY}px`,
+        width: "40px",
+        height: "40px",
+        left: positionLock ? "" : docX + "px",
+        top: positionLock ? "" : docY + "px",
       }}
       className={`
-        absolute w-10 h-10
-        -translate-x-5 -translate-y-5
+        absolute
+        -translate-x-1/2 -translate-y-1/2
         bg-gray-400/30
         rounded-full
         pointer-events-none
-        cursor
         z-50
+        transition-[width,height,transform] duration-200 ease-in-out
       `}
     />
   );
