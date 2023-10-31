@@ -44,7 +44,7 @@ export default function RootLayout({
     >
       <body className="flex flex-col">
         <Navbar />
-        <div className="grow">{children}</div>
+        <div className="h-real grow">{children}</div>
         <Footer />
         {deviceType != "mobile" && deviceType != "tablet" ? (
           <Cursor />
