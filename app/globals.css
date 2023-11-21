@@ -90,4 +90,12 @@
     @apply w-full h-full m-0  bg-background text-foreground select-none;
     cursor: none !important;
   }
+
+  .hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: 0;
+  }
+  .hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
 }
