@@ -31,7 +31,8 @@ const TranslatableContext = ({ className = "", children }: Props) => {
     cursorElement.classList.remove(
       "opacity-50",
       "transition-[top,left]",
-      "lock"
+      "lock",
+      "rounded-md"
     );
     cursorElement.style.width = "40px";
     cursorElement.style.height = "40px";
@@ -45,10 +46,11 @@ const TranslatableContext = ({ className = "", children }: Props) => {
           cursorElement.classList.add(
             "opacity-50",
             "transition-[top,left]",
-            "lock"
+            "lock",
+            "rounded-md"
           );
-          cursorElement.style.width = width + 8 + "px";
-          cursorElement.style.height = height + 8 + "px";
+          cursorElement.style.width = width + "px";
+          cursorElement.style.height = height + "px";
         }}
         onMouseMove={() => {
           const cursorElement = document.getElementById("cursor")!;
