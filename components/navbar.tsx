@@ -1,4 +1,3 @@
-import ThemeProvider from "./theme-provider";
 import Image from "next/image";
 import dong_logo from "@/public/dong-logo.svg";
 import NavigationMenu from "./navigation-menu";
@@ -13,7 +12,6 @@ const Navbar = () => (
       className="w-max h-5 ring-0 dark:invert"
     />
     <div className="flex place-items-center">
-      <ThemeProvider />
       <NavigationMenu />
     </div>
   </div>

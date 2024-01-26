@@ -42,7 +42,7 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.variable} ${lexend.variable} ${sourceCodePro.variable}`}
     >
-      <body className="flex flex-col">
+      <body className="flex flex-col dark">
         <Navbar />
         <div className="h-real grow">{children}</div>
         <Footer />
