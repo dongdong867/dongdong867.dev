@@ -13,7 +13,7 @@ import { FiMenu } from "react-icons/fi";
 const NavigationMenu = () => {
   return (
     <div>
-      <div className="font-medium text-lg max-sm:hidden">
+      <div className="flex font-medium text-lg max-sm:hidden">
         <TranslatableContext className="p-2">
           <Link href={"/about"}>About</Link>
         </TranslatableContext>

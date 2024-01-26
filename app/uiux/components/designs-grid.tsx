@@ -32,8 +32,8 @@ const DesignsGrid = () => {
           col-span-3 row-span-2 
           flex flex-col 
           justify-between 
-          place-items-center s
-          pace-y-6 max-sm:space-y-4"
+          place-items-center
+          space-y-6 max-sm:space-y-4"
       >
         <div
           className="

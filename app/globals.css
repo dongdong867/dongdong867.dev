@@ -83,10 +83,10 @@
     --gray-900: 28 28 30;
   }
 
-  * {
-    @apply border-border;
+  html {
+    @apply w-full h-full m-0 overflow-hidden
   }
   body {
-    @apply bg-background text-foreground;
+    @apply w-full h-full m-0 overflow-hidden bg-background text-foreground;
   }
 }

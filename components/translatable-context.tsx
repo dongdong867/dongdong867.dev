@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useMeasure, useMouse } from "react-use";
 
 type Props = {
   className?: string;
@@ -8,48 +9,46 @@ type Props = {
 };
 
 const TranslatableContext = ({ className = "", children }: Props) => {
-  const [top, setTop] = useState(0);
-  const [left, setLeft] = useState(0);
-  const [width, setWidth] = useState(0);
-  const [height, setHeight] = useState(0);
-
   const [translateX, setTranslateX] = useState(0);
   const [translateY, setTranslateY] = useState(0);
 
-  const ref = useRef<HTMLDivElement>(null);
+  const elementRef = useRef(null);
+  const { elX, elY } = useMouse(elementRef);
+  const [ref, { width, height }] = useMeasure<HTMLDivElement>();
+
   useEffect(() => {
-    if (ref.current) {
-      setTop(ref.current.getBoundingClientRect().top + window.scrollY);
-      setLeft(ref.current.getBoundingClientRect().left + window.scrollX);
-      setWidth(ref.current.clientWidth);
-      setHeight(ref.current.clientHeight);
+    if (elX >= 0 && elY >= 0 && elX <= width && elY <= height) {
+      setTranslateX(((elX - width / 2) * 15) / width);
+      setTranslateY(((elY - height / 2) * 15) / height);
+    } else {
+      setTranslateX(0);
+      setTranslateY(0);
     }
-  }, []);
+  }, [elX, elY, width, height]);
 
   return (
-    <div
-      ref={ref}
-      className={`
-        ${className} 
-        w-max h-max
-        inline-flex 
-        items-center justify-center 
-        rounded-md
-        bg-transparent 
-        hover:bg-gray/50 
-        hover:cursor-none
-      `}
-      onMouseMove={(e) => {
-        setTranslateX(((e.pageX - left - width / 2) / width) * 20);
-        setTranslateY(((e.pageY - top - height / 2) / height) * 20);
-      }}
-      onMouseLeave={() => {
-        setTranslateX(0);
-        setTranslateY(0);
-      }}
-    >
-      <div style={{ transform: `translate(${translateX}%, ${translateY}%)` }}>
-        {children}
+    <div className="flex flex-col">
+      <div ref={elementRef} className="w-max h-max">
+        <div ref={ref}>
+          <div
+            className={`
+              ${className}
+              w-max h-max
+              inline-flex 
+              items-center justify-center 
+              rounded-md
+              bg-transparent 
+              hover:bg-gray/50 
+              hover:cursor-none
+            `}
+          >
+            <div
+              style={{ transform: `translate(${translateX}%, ${translateY}%)` }}
+            >
+              {children}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
