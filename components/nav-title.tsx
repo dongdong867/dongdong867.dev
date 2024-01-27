@@ -41,7 +41,7 @@ const NavTitle = () => {
             md:space-x-1"
       >
         <TranslatableContext className="text-base">
-          <Link href={"/fullstack"} className="cursor-none">
+          <Link href={"/"} className="cursor-none">
             <div className="w-full flex justify-between place-items-center space-x-1 sm:hidden">
               <div>A Full Stack Developer</div>
               <FiArrowUpRight />
