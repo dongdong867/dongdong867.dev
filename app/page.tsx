@@ -1,6 +1,7 @@
 import NavTitle from "@/components/nav-title";
 import TechStack from "./components/tech-stack";
 import SkillSet from "./components/skill-set";
+import Experience from "./components/experience";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="w-full h-[10dvh]" />
       <TechStack />
       <SkillSet />
+      <Experience />
     </div>
   );
 }
