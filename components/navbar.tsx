@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Navbar = () => (
   <div className="h-max flex-grow-0 flex justify-between place-items-center mx-10 mt-4 max-sm:mx-6">
-    <Link href={"/"}>
+    <Link href={"/"} className="cursor-none">
       <Image
         src={dong_logo}
         alt="dong-logo"
