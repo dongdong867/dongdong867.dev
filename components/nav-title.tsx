@@ -32,38 +32,29 @@ const NavTitle = () => {
       <div
         className="
             w-full h-max
-            m-auto 
+            m-auto
             font-semibold 
             flex justify-center place-items-center 
             max-sm:w-max
             max-sm:mt-2
-            max-sm:flex-col max-sm:place-items-start
-            md:space-x-1"
+            max-sm:flex-col
+            md:space-x-4"
       >
-        <TranslatableContext className="text-base">
-          <Link href={"/"} className="cursor-none">
-            <div className="w-full flex justify-between place-items-center space-x-1 sm:hidden">
-              <div>A Full Stack Developer</div>
-              <FiArrowUpRight />
-            </div>
-            <div className="max-sm:hidden">A Full Stack Developer</div>
-          </Link>
-        </TranslatableContext>
+        <div>A Full Stack Developer</div>
 
         <Separator
           orientation="vertical"
           className="w-0.5 h-5 bg-foreground max-sm:hidden"
         />
 
-        <TranslatableContext className="text-base">
-          <Link href={"/uiux"} className="cursor-none">
-            <div className="w-full flex justify-between place-items-center space-x-1 sm:hidden">
-              <div>A UI/ UX Designer</div>
-              <FiArrowUpRight />
-            </div>
-            <div className="max-sm:hidden">A UI/ UX Designer</div>
-          </Link>
-        </TranslatableContext>
+        <div>A Student</div>
+
+        <Separator
+          orientation="vertical"
+          className="w-0.5 h-5 bg-foreground max-sm:hidden"
+        />
+
+        <div>A Tech Lover</div>
       </div>
     </div>
   );
