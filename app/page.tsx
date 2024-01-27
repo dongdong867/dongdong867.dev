@@ -5,9 +5,9 @@ import SkillSet from "./components/skill-set";
 export default function Home() {
   return (
     <div className="flex flex-col gap-y-20">
-      <div className="mt-[50vh] mb-[30vh]">
-        <NavTitle />
-      </div>
+      <div className="w-full h-[40dvh]" />
+      <NavTitle />
+      <div className="w-full h-[10dvh]" />
       <TechStack />
       <SkillSet />
     </div>
