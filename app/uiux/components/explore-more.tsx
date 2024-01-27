@@ -2,7 +2,8 @@ import TranslatableContext from "@/components/translatable-context";
 
 const ExploreMore = () => {
   return (
-    <div className="w-max m-auto font-display font-black my-60 max-sm:my-40">
+    <div className="w-max m-auto font-display font-black">
+      <div className="h-20" />
       <div className="text-6xl max-sm:text-3xl">
         <div>Explore</div>
         <div>More in</div>
@@ -17,6 +18,7 @@ const ExploreMore = () => {
           WORKS.
         </div>
       </TranslatableContext>
+      <div className="h-40" />
     </div>
   );
 };
