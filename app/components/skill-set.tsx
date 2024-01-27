@@ -84,7 +84,7 @@ const SkillSet = () => {
       >
         <Carousel
           plugins={[Autoplay({ delay: 4000 })]}
-          className="w-4/5 max-w-[1000px]"
+          className="w-11/12 max-w-[1000px]"
         >
           <CarouselContent className="flex place-items-center">
             <SkillSetCard title={"Frontend"} skillSetData={FrontendSets} />
@@ -101,8 +101,8 @@ const SkillSet = () => {
               skillSetData={AdditionalSets}
             />
           </CarouselContent>
-          <CarouselPrevious className="cursor-none hover:bg-gray/60 disabled:text-transparent" />
-          <CarouselNext className="cursor-none hover:bg-gray/60 disabled:text-transparent" />
+          <CarouselPrevious className="cursor-none hover:bg-gray/60 disabled:text-transparent max-md:hidden" />
+          <CarouselNext className="cursor-none hover:bg-gray/60 disabled:text-transparent max-md:hidden" />
         </Carousel>
       </div>
     </div>
