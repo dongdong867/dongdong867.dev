@@ -76,7 +76,7 @@ const SkillSet = () => {
         space-y-3 mx-auto
         py-6"
       >
-        <Carousel plugins={[Autoplay({delay: 4000})]} className="w-3/4">
+        <Carousel plugins={[Autoplay({delay: 4000})]} className="w-3/4 max-w-[1000px]">
           <CarouselContent className="flex place-items-center">
             <SkillSetCard title={"Frontend"} skillSetData={FrontendSets} />
             <SkillSetCard title={"Backend"} skillSetData={BackendSets} />
