@@ -7,7 +7,7 @@ const techStack = () => {
     <div className="relative m-auto w-max h-max mb-20">
       <div className="relative w-max m-auto">
         <div className="mb-4 text-3xl font-semibold">I Develop</div>
-        <div className="pl-10 md:pl-20 text-5xl md:text-8xl lg:text-9xl font-bold md:tracking-tight">
+        <div className="pl-10 md:pl-20 text-5xl md:text-8xl xl:text-9xl font-bold md:tracking-tight">
           <div className="relative z-20">Frontend</div>
           <div>Backend</div>
           <div>Database</div>
