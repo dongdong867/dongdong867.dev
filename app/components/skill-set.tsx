@@ -1,62 +1,100 @@
+"use client";
+
 import Image from "next/image";
 import {
-  SkillSetFirstLine,
-  SkillSetFourthLine,
-  SkillSetSecondLine,
-  SkillSetThirdLine,
+  AdditionalSets,
+  BackendSets,
+  DatabaseSets,
+  FrontendSets,
+  HostingSets,
+  MobileSets,
+  ProgrammingLanguageSets,
 } from "../lib/skill-set-data";
-import AutoScrollingContent from "@/components/auto-scrolling-content";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 type Props = {
+  title: string;
   skillSetData: {
     icon: string;
     name: string;
   }[];
 };
 
-const SkillSetLine = ({ skillSetData }: Props) => {
+const SkillSetCard = ({ title, skillSetData }: Props) => {
   return (
-    <div className="w-full flex pr-4 gap-x-4 overflow-hidden overflow-x-scroll hide-scroll-bar">
-      {skillSetData.map((skillSet) => {
-        return (
-          <div
-            key={skillSet.name}
-            className="w-max container flex gap-x-2 justify-center place-items-center px-4 py-2 bg-white rounded-full"
-          >
-            <Image
-              src={skillSet.icon}
-              alt=""
-              width={200}
-              height={200}
-              className="w-5 h-max"
-            />
-            <div className="w-max whitespace-nowrap text-neutral font-semibold">
-              {skillSet.name}
-            </div>
+    <CarouselItem className="px-8">
+      <Card className="bg-[url('/skill-stack/background.png')] bg-cover">
+        <CardHeader>
+          <CardTitle className="text-3xl text-white drop-shadow-[3px_4px_5px_rgba(0,0,0,0.3)]">
+            {title}
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="w-full gap-4 flex flex-wrap justify-center hide-scroll-bar">
+            {skillSetData.map((skillSet) => {
+              return (
+                <div
+                  key={skillSet.name}
+                  className="w-max flex gap-x-2 justify-center place-items-center px-4 py-2 bg-white rounded-full shadow-[3px_4px_10px_3px_#00000020]"
+                >
+                  <Image
+                    src={skillSet.icon}
+                    alt=""
+                    width={200}
+                    height={200}
+                    className="w-5 h-max"
+                  />
+                  <div className="w-max whitespace-nowrap text-neutral font-semibold">
+                    {skillSet.name}
+                  </div>
+                </div>
+              );
+            })}
           </div>
-        );
-      })}
-    </div>
+        </CardContent>
+      </Card>
+    </CarouselItem>
   );
 };
 
 const SkillSet = () => {
   return (
     <div>
-      <div className="text-2xl font-bold text-center mb-4">Skill Set</div>
-      <div className="w-3/5 h-max space-y-3 px-px py-6 mx-auto overflow-hidden overflow-x-hidden rounded-[50px] bg-[url('/skill-stack/background.png')] bg-cover">
-        <AutoScrollingContent baseVelocity={-5} wrapValue={{min: 0, max: -205}}>
-          <SkillSetLine skillSetData={SkillSetFirstLine} />
-        </AutoScrollingContent>
-        <AutoScrollingContent baseVelocity={10} wrapValue={{min: 0, max: -205}}>
-          <SkillSetLine skillSetData={SkillSetSecondLine} />
-        </AutoScrollingContent>
-        <AutoScrollingContent baseVelocity={-10} wrapValue={{min: 0, max: -188}}>
-          <SkillSetLine skillSetData={SkillSetThirdLine} />
-        </AutoScrollingContent>
-        <AutoScrollingContent baseVelocity={5} wrapValue={{min: 0, max: -196}}>
-          <SkillSetLine skillSetData={SkillSetFourthLine} />
-        </AutoScrollingContent>
+      <div className="text-2xl font-bold text-center">Skill Set</div>
+      <div
+        className="
+        w-11/12 h-max
+        flex justify-center
+        space-y-3 mx-auto
+        py-6"
+      >
+        <Carousel plugins={[Autoplay({delay: 4000})]} className="w-3/4">
+          <CarouselContent className="flex place-items-center">
+            <SkillSetCard title={"Frontend"} skillSetData={FrontendSets} />
+            <SkillSetCard title={"Backend"} skillSetData={BackendSets} />
+            <SkillSetCard title={"Mobile"} skillSetData={MobileSets} />
+            <SkillSetCard title={"Database"} skillSetData={DatabaseSets} />
+            <SkillSetCard
+              title={"Programming Languages"}
+              skillSetData={ProgrammingLanguageSets}
+            />
+            <SkillSetCard title={"Hosting"} skillSetData={HostingSets} />
+            <SkillSetCard
+              title={"Others (NLP, ML, Crawling)"}
+              skillSetData={AdditionalSets}
+            />
+          </CarouselContent>
+          <CarouselPrevious className="cursor-none hover:bg-gray disabled:text-transparent" />
+          <CarouselNext className="cursor-none hover:bg-gray disabled:text-transparent" />
+        </Carousel>
       </div>
     </div>
   );
