@@ -30,8 +30,8 @@ type Props = {
 
 const SkillSetCard = ({ title, skillSetData }: Props) => {
   return (
-    <CarouselItem className="px-8">
-      <Card className="bg-[url('/skill-stack/background.png')] bg-cover">
+    <CarouselItem className="lg:px-8">
+      <Card className="bg-[url('/skill-stack/background.png')] bg-cover rounded-xl">
         <CardHeader>
           <CardTitle className="text-3xl text-white drop-shadow-[3px_4px_5px_rgba(0,0,0,0.3)]">
             {title}
@@ -43,7 +43,13 @@ const SkillSetCard = ({ title, skillSetData }: Props) => {
               return (
                 <div
                   key={skillSet.name}
-                  className="w-max flex gap-x-2 justify-center place-items-center px-4 py-2 bg-white rounded-full shadow-[3px_4px_10px_3px_#00000020]"
+                  className="
+                    w-max gap-x-2
+                    flex justify-center place-items-center 
+                    px-4 py-2 
+                    bg-white 
+                    rounded-full 
+                    shadow-[3px_4px_10px_3px_#00000020]"
                 >
                   <Image
                     src={skillSet.icon}
@@ -76,7 +82,10 @@ const SkillSet = () => {
         space-y-3 mx-auto
         py-6"
       >
-        <Carousel plugins={[Autoplay({delay: 4000})]} className="w-3/4 max-w-[1000px]">
+        <Carousel
+          plugins={[Autoplay({ delay: 4000 })]}
+          className="w-4/5 max-w-[1000px]"
+        >
           <CarouselContent className="flex place-items-center">
             <SkillSetCard title={"Frontend"} skillSetData={FrontendSets} />
             <SkillSetCard title={"Backend"} skillSetData={BackendSets} />
@@ -92,8 +101,8 @@ const SkillSet = () => {
               skillSetData={AdditionalSets}
             />
           </CarouselContent>
-          <CarouselPrevious className="cursor-none hover:bg-gray disabled:text-transparent" />
-          <CarouselNext className="cursor-none hover:bg-gray disabled:text-transparent" />
+          <CarouselPrevious className="cursor-none hover:bg-gray/60 disabled:text-transparent" />
+          <CarouselNext className="cursor-none hover:bg-gray/60 disabled:text-transparent" />
         </Carousel>
       </div>
     </div>
