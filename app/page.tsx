@@ -2,6 +2,7 @@ import NavTitle from "@/components/nav-title";
 import TechStack from "./components/tech-stack";
 import SkillSet from "./components/skill-set";
 import Experience from "./components/experience";
+import ExploreMore from "./uiux/components/explore-more";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <TechStack />
       <SkillSet />
       <Experience />
+      <ExploreMore />
     </div>
   );
 }
