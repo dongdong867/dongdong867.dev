@@ -25,7 +25,7 @@ const NavigationMenu = () => {
           </Link>
         </TranslatableContext>
         <TranslatableContext>
-          <Link href={"/connect"} className="cursor-none">
+          <Link href={"mailto:dongdong0867@gmail.com"} className="cursor-none">
             Connects
           </Link>
         </TranslatableContext>
@@ -48,7 +48,7 @@ const NavigationMenu = () => {
               <Link href={"/works"}>Works</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link href={"/connect"}>Connects</Link>
+              <Link href={"mailto:dongdong0867@gmail.com"}>Connects</Link>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
