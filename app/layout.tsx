@@ -25,7 +25,7 @@ const sourceCodePro = Source_Code_Pro({
 });
 
 export const metadata = {
-  title: "Dongdong867 - Full Stack Developer | UI/ UX Designer",
+  title: "Dongdong867",
   description: "A portfolio designed and developed by Dongdong867.",
 };
 
