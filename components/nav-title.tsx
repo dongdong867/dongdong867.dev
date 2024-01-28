@@ -38,7 +38,7 @@ const NavTitle = () => {
             max-sm:w-max
             max-sm:mt-2
             max-sm:flex-col
-            md:space-x-4"
+            sm:space-x-4"
       >
         <div>A Full Stack Developer</div>
 
