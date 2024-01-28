@@ -22,7 +22,7 @@ const Footer = () => {
     >
       <div>Copyright © 2023 Dongdong867</div>
       <div className="flex">
-        <TranslatableContext className="p-2">
+        <TranslatableContext>
           <Link
             href={"https://github.com//dongdong867"}
             target="_blank"
@@ -31,7 +31,7 @@ const Footer = () => {
             <FaGithub className="text-2xl" />
           </Link>
         </TranslatableContext>
-        <TranslatableContext className="p-2">
+        <TranslatableContext >
           <Link
             href={"https://linkedin.com/in/dongdong867"}
             target="_blank"
@@ -40,7 +40,7 @@ const Footer = () => {
             <FaLinkedin className="text-2xl" />
           </Link>
         </TranslatableContext>
-        <TranslatableContext className="p-2">
+        <TranslatableContext >
           <Link
             href={"https://instagram.com/dongdong_867"}
             target="_blank"
@@ -49,7 +49,7 @@ const Footer = () => {
             <FaInstagram className="text-2xl" />
           </Link>
         </TranslatableContext>
-        <TranslatableContext className="p-2">
+        <TranslatableContext >
           <Link
             href={"https://discordapp.com/users/978679087067435039"}
             target="_blank"
@@ -58,7 +58,7 @@ const Footer = () => {
             <FaDiscord className="text-2xl" />
           </Link>
         </TranslatableContext>
-        <TranslatableContext className="p-2">
+        <TranslatableContext>
           <Link href={"mailto:dongdong0867@gmail.com"} className="cursor-none">
             <FaEnvelope className="text-2xl" />
           </Link>
