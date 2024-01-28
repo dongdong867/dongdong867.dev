@@ -1,6 +1,3 @@
-import Link from "next/link";
-import TranslatableContext from "./translatable-context";
-import { FiArrowUpRight } from "react-icons/fi";
 import { Separator } from "./ui/separator";
 
 const NavTitle = () => {
