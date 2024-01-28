@@ -1,4 +1,5 @@
 import TranslatableContext from "@/components/translatable-context";
+import Link from "next/link";
 
 const ExploreMore = () => {
   return (
@@ -9,6 +10,7 @@ const ExploreMore = () => {
         <div>More in</div>
       </div>
       <TranslatableContext className="w-max p-2 rounded-xl">
+        <Link href={"/works"} className="cursor-none">  
         <div
           className="
           text-8xl max-sm:text-5xl
@@ -17,6 +19,7 @@ const ExploreMore = () => {
         >
           WORKS.
         </div>
+        </Link>
       </TranslatableContext>
       <div className="h-40" />
     </div>
