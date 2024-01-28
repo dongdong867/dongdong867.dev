@@ -1,7 +1,7 @@
 const Works = () => {
   return (
-    <div>
-      <div></div>
+    <div className="h-full flex justify-center place-items-center">
+      <div>Works page still in development.</div>
     </div>
   );
 };
