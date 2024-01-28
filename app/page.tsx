@@ -9,8 +9,9 @@ export default function Home() {
     <div className="flex flex-col gap-y-20">
       <div className="w-full h-[40dvh]" />
       <NavTitle />
-      <div className="w-full h-[10dvh]" />
+      <div className="w-full h-[20dvh]" />
       <TechStack />
+      <div className="h-[20dvh]" />
       <SkillSet />
       <Experience />
       <ExploreMore />
