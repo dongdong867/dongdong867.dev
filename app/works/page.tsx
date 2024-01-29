@@ -7,7 +7,7 @@ const Works = () => {
       <div className="w-max m-auto md:text-xl">
         <div>On the journey to</div>
         <div className="text-xl md:text-3xl font-bold">
-          improving people's life
+          improving people&apos;s life
         </div>
         <div>and</div>
         <div className="text-xl md:text-3xl font-bold">
