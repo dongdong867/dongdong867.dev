@@ -18,7 +18,7 @@ const Works = () => {
 
       <div
         className="
-        w-4/5
+        w-max
         flex max-md:flex-col m-auto
         place-items-start md:place-items-end
         max-md:space-y-4 md:space-x-8"
@@ -34,7 +34,7 @@ const Works = () => {
             alt=""
             width={200}
             height={200}
-            className="drop-shadow-[10px_10px_20px_rgba(0,0,0,0.4)]"
+            className="max-md:w-max drop-shadow-[10px_10px_20px_rgba(0,0,0,0.4)]"
           />
         </div>
         <div className="w-max">
@@ -63,13 +63,13 @@ const Works = () => {
       </div>
       <div className="h-[20dvh]" />
       
-      <div className="w-4/5 px-4 flex max-md:flex-col m-auto justify-around max-md:space-y-[20dvh]">
-        <div className="w-max space-y-8">
-          <div className="w-max p-10 bg-white rounded-3xl">
+      <div className="w-full md:w-5/6 px-4 flex max-md:flex-col m-auto justify-around max-md:space-y-[20dvh]">
+        <div className="w-max md:w-[30%] m-auto space-y-8">
+          <div className="w-max md:w-full p-10 bg-white rounded-3xl">
             <Image
               src={"/works/go-cafe.png"}
               alt=""
-              width={300}
+              width={500}
               height={500}
               className="w-full drop-shadow-[10px_10px_20px_rgba(0,0,0,0.4)]"
             />
@@ -80,12 +80,12 @@ const Works = () => {
             <div className="max-md:text-sm">2023/04 - 2023/07</div>
           </div>
         </div>
-        <div className="w-max space-y-8">
-          <div className="w-max p-10 bg-white rounded-3xl">
+        <div className="w-max md:w-[30%] m-auto space-y-8">
+          <div className="w-max md:w-full p-10 bg-white rounded-3xl">
             <Image
               src={"/works/what2eat.png"}
               alt=""
-              width={300}
+              width={500}
               height={500}
               className="w-full drop-shadow-[10px_10px_20px_rgba(0,0,0,0.4)]"
             />
