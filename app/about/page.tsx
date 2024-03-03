@@ -31,21 +31,21 @@ const About = () => {
       </div>
 
       <div className="h-[30dvh]" />
-      <div className="w-4/5 m-auto">
+      <div className="w-4/5 max-w-[400px] m-auto">
         My journey involves mastering complex code while embracing continuous
         learning, driven by curiosity for technology and a passion for crafting
         innovative digital solutions.
       </div>
       <div className="h-[20dvh]" />
 
-      <Image
+      {/* <Image
         src={"/about/dong.jpg"}
         alt=""
         width={1000}
         height={1000}
         className="w-4/5 m-auto"
       />
-      <div className="h-[20dvh]" />
+      <div className="h-[20dvh]" /> */}
 
       <div className="w-5/6 md:w-3/5 m-auto space-y-4">
         <div>
