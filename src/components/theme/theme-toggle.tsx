@@ -13,6 +13,7 @@ import { MdSunny, MdDarkMode } from "react-icons/md";
 // utils
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import { Translatable } from "../translatable";
 
 const ThemeDropdownItem = ({
   themeOption,
@@ -34,14 +35,16 @@ const ThemeToggle = () => {
       <DropdownMenuTrigger asChild>
         <Button
           aria-label="theme-toggle"
-          variant={"ghost"}
+          variant={"link"}
           size={"icon"}
-          className="size-10 rounded-full"
+          className="p-1 size-max rounded-full hover:bg-gray3"
         >
-          <MdSunny className={cn("size-full p-2 dark:hidden")} />
-          <MdDarkMode
-            className={cn("size-full p-2 hidden dark:block dark:scale-100")}
-          />
+          <Translatable>
+            <MdSunny className={cn("size-10 p-2 dark:hidden")} />
+            <MdDarkMode
+              className={cn("size-10 p-2 hidden dark:block dark:scale-100")}
+            />
+          </Translatable>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
