@@ -6,13 +6,13 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../ui/dropdown-menu"
+} from "../ui/dropdown-menu";
 import { Button } from "../ui/button";
 // icons
 import { MdSunny, MdDarkMode } from "react-icons/md";
 // utils
 import { cn } from "@/lib/utils";
-import useTheme from "next-theme";
+import { useTheme } from "next-themes";
 
 const ThemeDropdownItem = ({
   themeOption,
@@ -22,9 +22,7 @@ const ThemeDropdownItem = ({
   const { setTheme } = useTheme();
 
   return (
-    <DropdownMenuItem
-      onClick={() => setTheme(themeOption.toLowerCase())}
-    >
+    <DropdownMenuItem onClick={() => setTheme(themeOption.toLowerCase())}>
       {themeOption}
     </DropdownMenuItem>
   );
