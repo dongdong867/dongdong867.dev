@@ -19,7 +19,6 @@ const config = {
     },
     extend: {
       colors: {
-        primary: "rgb(var(--primary))",
         foreground: "rgb(var(--foreground))",
         background: "rgb(var(--background))",
         white: "rgb(var(--white))",

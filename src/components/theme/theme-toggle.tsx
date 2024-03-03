@@ -38,7 +38,7 @@ const ThemeToggle = () => {
           size={"icon"}
           className="size-10 rounded-full"
         >
-          <MdSunny className={cn("size-full p-2 text-primary dark:hidden")} />
+          <MdSunny className={cn("size-full p-2 dark:hidden")} />
           <MdDarkMode
             className={cn("size-full p-2 hidden dark:block dark:scale-100")}
           />
