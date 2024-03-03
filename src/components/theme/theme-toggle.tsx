@@ -37,7 +37,7 @@ const ThemeToggle = () => {
           aria-label="theme-toggle"
           variant={"link"}
           size={"icon"}
-          className="p-1 size-max rounded-full hover:bg-gray3"
+          className="p-1 size-max rounded-full hover:bg-gray4"
         >
           <Translatable>
             <MdSunny className={cn("size-10 p-2 dark:hidden")} />
