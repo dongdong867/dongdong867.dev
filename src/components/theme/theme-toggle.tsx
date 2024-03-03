@@ -47,6 +47,7 @@ const ThemeToggle = () => {
           </Translatable>
         </Button>
       </DropdownMenuTrigger>
+      
       <DropdownMenuContent>
         <ThemeDropdownItem themeOption="Light" />
         <ThemeDropdownItem themeOption="Dark" />
