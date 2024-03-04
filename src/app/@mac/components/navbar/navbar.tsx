@@ -9,14 +9,16 @@ export const Navbar = () => {
   return (
     <div
       className={cn(
-        "fixed w-11/12 max-w-lg left-1/2 -translate-x-1/2 mt-4 my-4",
+        "fixed w-full left-1/2 -translate-x-1/2",
         "flex justify-between place-items-center",
-        "bg-gray5/90 rounded-full backdrop-blur-sm shadow-xl",
+        "bg-gray5/10 backdrop-blur-sm shadow-lg",
         "transition-transform"
       )}
     >
-      <Logo />
-      <Routes />
+      <div className={cn("flex")}>
+        <Logo />
+        <Routes />
+      </div>
       <ThemeToggle />
     </div>
   );
