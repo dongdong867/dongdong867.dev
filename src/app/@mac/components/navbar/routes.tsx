@@ -1,5 +1,7 @@
+// components
 import Link from "next/link";
-import { Translatable } from "../translatable";
+import { Translatable } from "@/components/translatable";
+// utils
 import { cn } from "@/lib/utils";
 
 const NavLink = ({ route, label }: { route: string; label: string }) => {

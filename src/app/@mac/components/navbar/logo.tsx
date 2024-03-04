@@ -1,8 +1,11 @@
+// components
 import Link from "next/link";
-import { Button } from "../ui/button";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Translatable } from "@/components/translatable";
+// utils
 import { cn } from "@/lib/utils";
-import { Translatable } from "../translatable";
+
 
 export const Logo = () => {
   return (
