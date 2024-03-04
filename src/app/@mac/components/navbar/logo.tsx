@@ -6,12 +6,11 @@ import { Translatable } from "@/components/translatable";
 // utils
 import { cn } from "@/lib/utils";
 
-
 export const Logo = () => {
   return (
-    <Translatable className={cn("p-1 rounded-full hover:bg-gray4")}>
+    <Translatable className={cn("m-1 rounded-md hover:bg-gray4")}>
       <Link href={"/"}>
-        <Button asChild variant={"link"} size={"icon"}>
+        <Button asChild variant={"link"} size={"icon"} className={cn("")}>
           <Image
             alt=""
             width={20}
