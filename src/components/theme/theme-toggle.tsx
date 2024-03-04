@@ -48,7 +48,7 @@ const ThemeToggle = () => {
         </Button>
       </DropdownMenuTrigger>
       
-      <DropdownMenuContent>
+      <DropdownMenuContent align="end">
         <ThemeDropdownItem themeOption="Light" />
         <ThemeDropdownItem themeOption="Dark" />
         <ThemeDropdownItem themeOption="System" />
