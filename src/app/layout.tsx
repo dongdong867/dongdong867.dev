@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "@/styles/globals.css";
 import "@/styles/colors.css";
 import ThemeProvider from "@/components/theme/theme-provider";
-import { Navbar } from "@/components/navbar/navbar";
+import { cn } from "@/lib/utils";
 
-const poppins = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
+const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,21 +13,27 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  mac,
+  iphone,
 }: Readonly<{
-  children: React.ReactNode;
+  mac: React.ReactNode;
+  iphone: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={poppins.className}>
+      <body className={raleway.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          <main>{children}</main>
+          <div className={cn("hidden md:block")}>
+            <main>{mac}</main>
+          </div>
+          <div className={cn("md:hidden")}>
+            <main>{iphone}</main>
+          </div>
         </ThemeProvider>
       </body>
     </html>
