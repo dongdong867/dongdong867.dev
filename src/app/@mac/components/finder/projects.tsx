@@ -8,9 +8,13 @@ import { Button } from "@/components/ui/button";
 
 const ProjectDetail = ({ label, value }: { label: string; value: string }) => {
   return (
-    <div className={cn("w-full flex justify-between text-xs border-b border-gray3")}>
-      <div className={cn("text-gray")}>{label}</div>
-      <div>{value}</div>
+    <div
+      className={cn(
+        "w-full flex justify-between space-x-2 text-xs border-b border-gray3"
+      )}
+    >
+      <div className={cn("w-max text-nowrap  text-gray")}>{label}</div>
+      <div className={cn("text-right")}>{value}</div>
     </div>
   );
 };
@@ -30,18 +34,17 @@ export const Projects = () => {
             className={cn("size-full rounded-3xl shadow-2xl")}
           />
         </div>
-        <div
-          className={cn(
-            "flex p-2 overflow-hidden overflow-x-scroll"
-          )}
-        >
+
+        <div className={cn("flex p-2 overflow-hidden overflow-x-scroll")}>
           {projects.map((project) => {
             return (
               <Button
                 key={project.name}
                 variant={"link"}
                 onClick={() => setSelectedProject(project)}
-                className={cn("p-2.5 aspect-square size-full", {"bg-gray3": project.name == selectedProject.name})}
+                className={cn("p-2.5 aspect-square size-full", {
+                  "bg-gray3": project.name == selectedProject.name,
+                })}
               >
                 <Image
                   src={`/mac/projects/${project.icon}`}
@@ -55,6 +58,7 @@ export const Projects = () => {
           })}
         </div>
       </div>
+
       <div className={cn("w-0.5 bg-gray6")} />
       <div className={cn("w-1/3 min-w-[180px] mx-auto space-y-4 px-3 py-4")}>
         <div className={cn("flex place-items-center space-x-3")}>
@@ -63,17 +67,22 @@ export const Projects = () => {
             alt=""
             width={50}
             height={50}
-            className={cn("rounded-md")}
+            className={cn("rounded-lg")}
           />
           <div>
             <div className={cn("font-medium")}>{selectedProject.name}</div>
-            <div className={cn("text-xs")}>{selectedProject.type}</div>
+            <div className={cn("text-xs text-gray")}>
+              {selectedProject.type}
+            </div>
           </div>
         </div>
+
         <div className={cn("space-y-1")}>
           <div className={cn("text-sm font-medium")}>Information</div>
           <ProjectDetail label={"Started"} value={selectedProject.start} />
           <ProjectDetail label={"Ended"} value={selectedProject.end} />
+          <ProjectDetail label={"Type"} value={selectedProject.type} />
+          <ProjectDetail label={"Tech Used"} value={selectedProject.tech} />
         </div>
       </div>
     </div>
