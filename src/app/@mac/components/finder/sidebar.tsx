@@ -37,7 +37,7 @@ export const Sidebar = ({
   setSelection: React.Dispatch<SetStateAction<string>>;
 }) => {
   return (
-    <div className={cn("w-1/4 min-w-[150px] bg-gray4 backdrop-blur-sm")}>
+    <div className={cn("w-1/4 min-w-[150px] bg-gray4/85 backdrop-blur-md")}>
       <div className={cn("flex p-4 space-x-2")}>
         <div className={cn("size-3 bg-red rounded-full")} />
         <div className={cn("size-3 bg-yellow rounded-full")} />
