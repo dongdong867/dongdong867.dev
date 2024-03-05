@@ -34,16 +34,16 @@ export const FinderFrame = ({
     <motion.div
       drag
       className={cn(
-        "relative w-max max-w-screen-md flex top-12 left-4 bg-gray5 rounded-lg overflow-hidden"
+        "relative w-max max-w-screen-md flex top-12 left-4 rounded-lg overflow-hidden border border-gray2 shadow-xl"
       )}
     >
       <Sidebar selection={selection} setSelection={setSelection} />
       <div className={cn("w-0.5 bg-gray6")} />
       <div className={cn("size-full")}>
-        <div className={cn("px-4 py-3 font-semibold bg-gray4")}>
+        <div className={cn("px-4 py-3 font-semibold bg-gray3")}>
           {getTitle()}
         </div>
-        <div>
+        <div className={cn("bg-gray5")}>
           {selection == "application" && application}
           {selection == "projects" && projects}
           {selection == "techStack" && techStack}
