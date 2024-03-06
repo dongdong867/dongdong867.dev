@@ -1,12 +1,12 @@
 import { FinderFrame } from "./frame";
-import { Application } from "./application";
 import { Projects } from "./projects";
 import { TechStack } from "./tech-stack";
+import { Experience } from "./experience";
 
 export const Finder = () => {
   return (
     <FinderFrame
-      application={<Application />}
+      experience={<Experience />}
       projects={<Projects />}
       techStack={<TechStack />}
     />
