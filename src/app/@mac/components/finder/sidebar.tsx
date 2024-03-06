@@ -3,8 +3,9 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { SetStateAction } from "react";
-import { FaAppStoreIos, FaGitAlt } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
 import { FaCode } from "react-icons/fa6";
+import { MdOutlineWork } from "react-icons/md";
 
 const SidebarButton = ({
   selected,
@@ -46,11 +47,11 @@ export const Sidebar = ({
 
       <div className={cn("px-2 py-3 space-y-2 text-sm")}>
         <SidebarButton
-          selected={selection == "application"}
-          clickAction={() => setSelection("application")}
+          selected={selection == "experience"}
+          clickAction={() => setSelection("experience")}
         >
-          <FaAppStoreIos />
-          <div>Application</div>
+          <MdOutlineWork />
+          <div>Experience</div>
         </SidebarButton>
 
         <SidebarButton
