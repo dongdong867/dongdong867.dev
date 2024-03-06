@@ -4,25 +4,22 @@ import { useState } from "react";
 import { Sidebar } from "./sidebar";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { Application } from "./application";
-import { Projects } from "./projects";
-import { TechStack } from "./tech-stack";
 
 export const FinderFrame = ({
-  application,
+  experience,
   projects,
   techStack,
 }: {
-  application: JSX.Element;
+  experience: JSX.Element;
   projects: JSX.Element;
   techStack: JSX.Element;
 }) => {
-  const [selection, setSelection] = useState("application");
+  const [selection, setSelection] = useState("experience");
 
   const getTitle = () => {
     switch (selection) {
-      case "application":
-        return "Application";
+      case "experience":
+        return "Experience";
       case "projects":
         return "Projects";
       case "techStack":
@@ -44,7 +41,7 @@ export const FinderFrame = ({
           {getTitle()}
         </div>
         <div className={cn("bg-gray5")}>
-          {selection == "application" && application}
+          {selection == "experience" && experience}
           {selection == "projects" && projects}
           {selection == "techStack" && techStack}
         </div>
