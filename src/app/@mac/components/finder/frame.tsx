@@ -1,10 +1,9 @@
 "use client";
 
-import { useLayoutEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { Sidebar } from "./sidebar";
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
-import { useWindowSize } from "react-use";
+import { ApplicationWindow } from "../window";
 
 export const FinderFrame = ({
   experience,
@@ -15,15 +14,7 @@ export const FinderFrame = ({
   projects: JSX.Element;
   techStack: JSX.Element;
 }) => {
-  const ref = useRef<HTMLDivElement>(null);
   const [selection, setSelection] = useState("experience");
-
-  const { width: windowWidth, height: windowHeight } = useWindowSize();
-  const [width, setWidth] = useState(0);
-
-  useLayoutEffect(() => {
-    setWidth(ref.current?.offsetWidth ?? 0);
-  }, [selection]);
 
   const getTitle = () => {
     switch (selection) {
@@ -37,16 +28,8 @@ export const FinderFrame = ({
   };
 
   return (
-    <motion.div
-      drag
-      dragConstraints={{
-        top: 0,
-        left: -width + 20,
-        right: windowWidth - 20,
-        bottom: windowHeight - 20,
-      }}
-      dragElastic={0.1}
-      ref={ref}
+    <ApplicationWindow
+      detectUpdated={selection}
       className={cn(
         "relative w-max max-w-screen-md top-12 flex rounded-lg overflow-hidden border border-gray2 shadow-xl"
       )}
@@ -63,6 +46,6 @@ export const FinderFrame = ({
           {selection == "techStack" && techStack}
         </div>
       </div>
-    </motion.div>
+    </ApplicationWindow>
   );
 };
