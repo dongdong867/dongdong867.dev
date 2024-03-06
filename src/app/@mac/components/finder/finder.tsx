@@ -5,10 +5,12 @@ import { Experience } from "./experience";
 
 export const Finder = () => {
   return (
-    <FinderFrame
-      experience={<Experience />}
-      projects={<Projects />}
-      techStack={<TechStack />}
-    />
+    <div id="finder">
+      <FinderFrame
+        experience={<Experience />}
+        projects={<Projects />}
+        techStack={<TechStack />}
+      />
+    </div>
   );
 };
