@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        "mac-light": "url('/mac/background-light.png')",
+        "mac-dark": "url('/mac/background-dark.png')"
+      },
       colors: {
         foreground: "rgb(var(--foreground) / <alpha-value>)",
         background: "rgb(var(--background) / <alpha-value>)",
