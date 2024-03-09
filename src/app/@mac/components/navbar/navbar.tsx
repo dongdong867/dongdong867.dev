@@ -11,7 +11,7 @@ export const Navbar = () => {
       className={cn(
         "fixed w-full left-1/2 -translate-x-1/2",
         "flex justify-between place-items-center",
-        "bg-gray5/10 backdrop-blur-sm shadow-lg",
+        "bg-gray4/30 backdrop-blur-sm shadow-lg",
         "transition-transform"
       )}
     >
