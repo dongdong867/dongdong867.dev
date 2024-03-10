@@ -26,6 +26,7 @@ export const ApplicationWindow = ({
   return (
     <motion.div
       drag
+      dragMomentum={false}
       dragConstraints={{
         top: 0,
         left: -width + 20,
