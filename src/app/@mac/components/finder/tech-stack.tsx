@@ -35,7 +35,7 @@ export const TechStack = () => {
                 )}
               >
                 <Image
-                  src={"/apps/folder.png"}
+                  src={"/mac/apps/folder.png"}
                   alt=""
                   width={20}
                   height={20}

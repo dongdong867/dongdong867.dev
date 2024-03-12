@@ -22,7 +22,7 @@ const SidebarButton = ({
       variant={"link"}
       onClick={clickAction}
       className={cn(
-        "w-full h-max flex justify-start place-items-center px-4 py-1 space-x-2 font-normal hover:no-underline",
+        "w-full h-max flex justify-start place-items-center px-4 py-1.5 space-x-2 font-normal hover:no-underline",
         { "bg-gray2/80": selected }
       )}
     >
@@ -47,7 +47,7 @@ export const Sidebar = ({
     <div className={cn("w-1/4 min-w-[150px] bg-gray4/85 backdrop-blur-md")}>
       <WindowAction closeAction={hideFinder} expendAction={() => {}} />
 
-      <div className={cn("px-2 py-3 space-y-2 text-sm")}>
+      <div className={cn("px-2 py-3 text-sm")}>
         <SidebarButton
           selected={selection == "experience"}
           clickAction={() => setSelection("experience")}
