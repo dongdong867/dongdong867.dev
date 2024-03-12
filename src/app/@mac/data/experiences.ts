@@ -5,7 +5,7 @@ export const experiences = [
     company: "CSRone",
     start: "2023/08",
     end: "--",
-    techUsed: "NLP, LLM, Transformers, Python",
+    techUsed: "NLP, LLM, Transformers, Python, MySQL",
     current: true,
   },
   {
@@ -14,7 +14,7 @@ export const experiences = [
     company: "OpenNCCU",
     start: "2023/09",
     end: "--",
-    techUsed: "Nuxt3, Vue3.js, Node.js, Firebase, Typescript, Python, Selenium",
+    techUsed: "Nuxt3, Vue3.js, Node.js, Firebase, Typescript, Python, Selenium, Docker",
     current: true,
   },
   {
@@ -32,7 +32,16 @@ export const experiences = [
     company: "GDSC NCCU",
     start: "2023/09",
     end: "--",
-    techUsed: "NextJS, React, NextAuth Firebase",
+    techUsed: "NextJS, React, NextAuth Firebase, Docker",
+    current: true
+  },
+  {
+    icon: "bsg.png",
+    name: "General Affairs",
+    company: "BSG NCCU",
+    start: "2023/08",
+    end: "--",
+    techUsed: "NextJS, React, Vercel",
     current: true
   },
 ];

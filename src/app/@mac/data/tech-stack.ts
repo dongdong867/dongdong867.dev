@@ -14,12 +14,11 @@ export const techStack = [
     name: "Backend",
     list: [
       { icon: "express.png", name: "Express.js" },
-      { icon: "nodejs.png", name: "NestJS" },
+      { icon: "nodejs.png", name: "NodeJS" },
       { icon: "nestjs.png", name: "NestJS" },
       { icon: "spring.png", name: "Spring Boot" },
       { icon: "vapor.png", name: "Vapor" },
       { icon: "flask.png", name: "Flask" },
-      { icon: "graphql.png", name: "GraphQL" },
     ]
   },
   {
@@ -38,8 +37,11 @@ export const techStack = [
     list: [
       { icon: "postgre.png", name: "PostgreSQL" },
       { icon: "mysql.png", name: "MySQL" },
+      { icon: "sqlite.png", name: "SQLite" },
+      { icon: "graphql.png", name: "GraphQL" },
       { icon: "mongo.png", name: "MongoDB" },
       { icon: "firebase.png", name: "Firebase" },
+      { icon: "redis.png", name: "Redis" },
       { icon: "prisma.png", name: "Prisma" },
       { icon: "drizzle.png", name: "Drizzle ORM" },
     ]
@@ -66,7 +68,6 @@ export const techStack = [
       { icon: "vercel.png", name: "Vercel" },
       { icon: "docker.png", name: "Docker" },
       { icon: "nginx.png", name: "Nginx" },
-      { icon: "pm2.png", name: "PM2" },
       { icon: "gcp.png", name: "GCP" },
       { icon: "aws.png", name: "AWS" },
     ]
