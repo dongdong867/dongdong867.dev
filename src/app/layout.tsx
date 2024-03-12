@@ -13,11 +13,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  mac,
-  iphone,
+  children,
 }: Readonly<{
-  mac: React.ReactNode;
-  iphone: React.ReactNode;
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -28,12 +26,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className={cn("hidden md:block")}>
-            <main>{mac}</main>
-          </div>
-          <div className={cn("md:hidden")}>
-            <main>{iphone}</main>
-          </div>
+          <main>
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>
