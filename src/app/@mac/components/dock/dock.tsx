@@ -3,6 +3,14 @@
 import { cn } from "@/lib/utils";
 import { DockIcon } from "./icon";
 import { apps } from "../../data/apps";
+import Link from "next/link";
+
+const onAppClick = (id: string) => {
+  const application = document.getElementById(id);
+  if (application) {
+    application.classList.remove("hidden");
+  }
+};
 
 export const Dock = () => {
   return (
@@ -14,14 +22,26 @@ export const Dock = () => {
       )}
     >
       {apps.map((app) => {
-        return (
-          <DockIcon
-            key={app.label}
-            src={`/mac/apps/${app.icon}`}
-            label={app.label}
-            clickAction={() => {}}
-          />
-        );
+        if (app.type == "app") {
+          return (
+            <DockIcon
+              key={app.label}
+              src={`/mac/apps/${app.icon}`}
+              label={app.label}
+              clickAction={() => onAppClick(app.id!)}
+            />
+          );
+        } else {
+          return (
+            <Link href={app.address!} target="_blank" key={app.label}>
+              <DockIcon
+                src={`/mac/apps/${app.icon}`}
+                label={app.label}
+                clickAction={() => {}}
+              />
+            </Link>
+          );
+        }
       })}
     </div>
   );
