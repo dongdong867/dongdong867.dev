@@ -1,21 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { SetStateAction } from "react";
 import { Sidebar } from "./sidebar";
 import { cn } from "@/lib/utils";
-import { ApplicationWindow } from "../window";
 
 export const FinderFrame = ({
+  selection,
+  setSelection,
   experience,
   projects,
   techStack,
 }: {
+  selection: string;
+  setSelection: React.Dispatch<SetStateAction<string>>;
   experience: JSX.Element;
   projects: JSX.Element;
   techStack: JSX.Element;
 }) => {
-  const [selection, setSelection] = useState("experience");
-
   const getTitle = () => {
     switch (selection) {
       case "experience":
@@ -28,8 +29,7 @@ export const FinderFrame = ({
   };
 
   return (
-    <ApplicationWindow
-      detectUpdated={selection}
+    <div
       className={cn(
         "relative w-max max-w-screen-md top-12 flex rounded-lg overflow-hidden border border-gray2 shadow-xl"
       )}
@@ -46,6 +46,6 @@ export const FinderFrame = ({
           {selection == "techStack" && techStack}
         </div>
       </div>
-    </ApplicationWindow>
+    </div>
   );
 };

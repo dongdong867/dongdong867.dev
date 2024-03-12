@@ -3,7 +3,6 @@
 // components
 import { TopBar } from "./top-bar";
 import { Input } from "@/components/ui/input";
-import { ApplicationWindow } from "../window";
 // hooks
 import { useState } from "react";
 // utils
@@ -27,9 +26,9 @@ export const Frame = () => {
   };
 
   return (
-    <ApplicationWindow
+    <div
       className={cn(
-        "relative top-12 bg-gray5/80 backdrop-blur-lg max-w-screen-md rounded-lg overflow-hidden"
+        "relative w-[680px] top-12 bg-gray5/80 backdrop-blur-lg max-w-screen-md rounded-lg overflow-hidden"
       )}
     >
       <TopBar />
@@ -84,6 +83,6 @@ export const Frame = () => {
           </div>
         </div>
       </div>
-    </ApplicationWindow>
+    </div>
   );
 };
