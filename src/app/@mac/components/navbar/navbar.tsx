@@ -17,7 +17,7 @@ export const Navbar = () => {
     >
       <div className={cn("flex")}>
         <Logo />
-        <Routes />
+        {/* <Routes /> */}
       </div>
       <ThemeToggle />
     </div>
