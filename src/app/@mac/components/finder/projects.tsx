@@ -13,7 +13,7 @@ const ProjectDetail = ({ label, value }: { label: string; value: string }) => {
         "w-full flex justify-between space-x-2 text-xs border-b border-gray3"
       )}
     >
-      <div className={cn("w-max text-nowrap  text-gray")}>{label}</div>
+      <div className={cn("w-max text-nowrap text-gray")}>{label}</div>
       <div className={cn("text-right")}>{value}</div>
     </div>
   );
@@ -29,9 +29,9 @@ export const Projects = () => {
           <Image
             src={`/projects/${selectedProject.icon}`}
             alt=""
-            width={300}
-            height={300}
-            className={cn("size-full rounded-3xl shadow-2xl")}
+            width={400}
+            height={400}
+            className={cn("size-full drop-shadow-2xl")}
           />
         </div>
 
