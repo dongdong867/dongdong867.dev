@@ -35,7 +35,7 @@ export const TechStack = () => {
                 )}
               >
                 <Image
-                  src={"/mac/apps/folder.png"}
+                  src={"/apps/folder.png"}
                   alt=""
                   width={20}
                   height={20}
@@ -63,7 +63,7 @@ export const TechStack = () => {
                 )}
               >
                 <Image
-                  src={`/mac/tech-stack/${item.icon}`}
+                  src={`/tech-stack/${item.icon}`}
                   alt=""
                   width={20}
                   height={20}
@@ -77,7 +77,7 @@ export const TechStack = () => {
       <div className={cn("w-0.5 bg-gray6")} />
       <div className={cn("min-w-[200px] my-auto")}>
         <Image
-          src={`/mac/tech-stack/${selectedItem.icon}`}
+          src={`/tech-stack/${selectedItem.icon}`}
           alt=""
           width={100}
           height={100}

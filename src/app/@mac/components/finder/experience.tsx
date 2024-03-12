@@ -37,7 +37,7 @@ export const Experience = () => {
                 )}
               >
                 <Image
-                  src={`/mac/experience/${experience.icon}`}
+                  src={`/experience/${experience.icon}`}
                   alt=""
                   width={40}
                   height={40}
@@ -52,7 +52,7 @@ export const Experience = () => {
       <div className={cn("w-px bg-gray6")} />
       <div className={cn("max-w-[200px] p-4 space-y-2")}>
         <Image
-          src={`/mac/experience/${selectedExperience.icon}`}
+          src={`/experience/${selectedExperience.icon}`}
           alt=""
           width={150}
           height={150}

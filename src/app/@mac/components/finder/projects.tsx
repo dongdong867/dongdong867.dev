@@ -27,7 +27,7 @@ export const Projects = () => {
       <div className={cn("w-2/3")}>
         <div className={cn("max-w-[300px] aspect-square m-auto p-10")}>
           <Image
-            src={`/mac/projects/${selectedProject.icon}`}
+            src={`/projects/${selectedProject.icon}`}
             alt=""
             width={300}
             height={300}
@@ -47,7 +47,7 @@ export const Projects = () => {
                 })}
               >
                 <Image
-                  src={`/mac/projects/${project.icon}`}
+                  src={`/projects/${project.icon}`}
                   alt=""
                   width={100}
                   height={100}
@@ -63,7 +63,7 @@ export const Projects = () => {
       <div className={cn("w-1/3 min-w-[180px] mx-auto space-y-4 px-3 py-4")}>
         <div className={cn("flex place-items-center space-x-3")}>
           <Image
-            src={`/mac/projects/${selectedProject.icon}`}
+            src={`/projects/${selectedProject.icon}`}
             alt=""
             width={50}
             height={50}

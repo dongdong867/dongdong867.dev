@@ -10,7 +10,7 @@ export const Application = () => {
           return (
             <div key={app.label} className={cn("col-span-1 space-y-1")}>
               <Image
-                src={`/mac/apps/${app.icon}`}
+                src={`/apps/${app.icon}`}
                 alt=""
                 width={60}
                 height={60}
