@@ -37,17 +37,17 @@ const ThemeToggle = () => {
           aria-label="theme-toggle"
           variant={"link"}
           size={"icon"}
-          className="m-1 size-max hover:bg-gray4"
+          className="size-max"
         >
           <Translatable>
-            <MdSunny className={cn("size-10 p-2 dark:hidden")} />
+            <MdSunny className={cn("size-10 p-1.5 dark:hidden")} />
             <MdDarkMode
-              className={cn("size-10 p-2 hidden dark:block dark:scale-100")}
+              className={cn("size-10 p-1.5 hidden dark:block dark:scale-100")}
             />
           </Translatable>
         </Button>
       </DropdownMenuTrigger>
-      
+
       <DropdownMenuContent align="end">
         <ThemeDropdownItem themeOption="Light" />
         <ThemeDropdownItem themeOption="Dark" />
