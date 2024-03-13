@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { Variant, motion } from "framer-motion";
 
 type InviewTransitionProps = {
+  repeat?: boolean;
   offscreen?: Variant;
   onscreen?: Variant;
   className?: string;
@@ -11,6 +12,7 @@ type InviewTransitionProps = {
 };
 
 export const InviewTransition = ({
+  repeat = true,
   offscreen = {
     y: 20,
     opacity: 0,
@@ -27,6 +29,7 @@ export const InviewTransition = ({
       initial="offscreen"
       whileInView="onscreen"
       variants={{ offscreen, onscreen }}
+      viewport={{ once: !repeat }}
       className={cn(
         "text-lg space-y-0.5 transition-all duration-50 ease-in-out",
         className
