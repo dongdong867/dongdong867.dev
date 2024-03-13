@@ -8,7 +8,7 @@ export const WorkStack = () => {
     <div
       style={{ colorScheme: "dark" }}
       className={cn(
-        "w-screen h-[50dvh] md:h-[120dvh] flex m-auto text-white bg-black py-10"
+        "w-screen h-[50dvh] md:h-[120dvh] flex m-auto text-white bg-black dark dark:bg-background py-10"
       )}
     >
       <div className="relative m-auto w-max h-max">
