@@ -23,7 +23,7 @@ export const Opennccu = () => {
           </div>
           <div className={cn("w-max m-auto")}>
             <Link href={"https://opennccu.com"}>
-              <Translatable className={cn("text-center text-blue")}>
+              <Translatable className={cn("text-center text-blue drop-shadow-md")}>
                 View Website ↗
               </Translatable>
             </Link>
