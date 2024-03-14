@@ -9,7 +9,7 @@ export const Navbar = () => {
     <div
       className={cn(
         "fixed w-full max-w-md max-md:w-11/12 left-1/2 -translate-x-1/2",
-        "mt-4 px-4 bg-gray5 rounded-full z-50 shadow-lg",
+        "mt-4 px-4 bg-gray5/30 backdrop-blur-md rounded-full z-50 shadow-lg",
         "flex justify-between place-items-center"
       )}
     >
