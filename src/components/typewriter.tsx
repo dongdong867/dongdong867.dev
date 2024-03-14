@@ -32,7 +32,7 @@ export const Typewriter = ({
     if (isInView) {
       animate(
         "span",
-        { opacity: 1, display: "inline-block" },
+        { opacity: 1, display: "inline" },
         { duration: 0.1, delay: stagger(0.2), ease: "easeInOut" }
       );
     }
@@ -40,10 +40,10 @@ export const Typewriter = ({
 
   const typingWords = () => {
     return (
-      <motion.div ref={scope} className={cn("inline")}>
+      <motion.div ref={scope}>
         {splitWords.map((word, index) => {
           return (
-            <div key={`word-${index}`} className={cn("inline")}>
+            <div key={`word-${index}`}>
               {word.text.map((char, index) => {
                 return (
                   <motion.span
@@ -63,7 +63,7 @@ export const Typewriter = ({
   };
 
   return (
-    <div className={cn(className)}>
+    <div className={cn("flex", className)}>
       {typingWords()}
       <motion.span
         initial={{ opacity: 0 }}
