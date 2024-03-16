@@ -23,7 +23,7 @@ const Home = () => {
             ]}
             className={cn("text-4xl md:text-5xl")}
           />
-          <InviewTransition className={cn("py-2 -space-y-px text-gray")}>
+          <InviewTransition className={cn("py-2 -space-y-px text-gray text-lg")}>
             <div>A Fullstack Developer</div>
             <div>A Mobile Application Developer</div>
             <div>A NLP Engineer</div>
