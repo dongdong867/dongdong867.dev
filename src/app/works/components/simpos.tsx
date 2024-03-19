@@ -19,7 +19,7 @@ export const SimPOS = () => {
             </div>
       </div>
 
-      <div className={cn("h-[120px] md:h-[280px]")} />
+      <div className={cn("h-[300px] md:h-[280px]")} />
       <Image
         src={"/projects/simpos-mock.png"}
         alt=""

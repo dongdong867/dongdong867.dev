@@ -7,7 +7,7 @@ import Link from "next/link";
 export const GoCafe = () => {
   return (
     <Card>
-      <div className={cn("flex")}>
+      <div className={cn("flex max-md:flex-col")}>
         <div className={cn("md:w-3/5 my-auto space-y-10")}>
           <Image
             src={"/projects/gocafe.png"}
@@ -32,6 +32,7 @@ export const GoCafe = () => {
           </div>
         </div>
 
+        <div className={cn("max-md:h-[380px]")} />
         <Image
           src={"/projects/gocafe-mock.png"}
           alt=""
