@@ -77,7 +77,7 @@ export const SkillSets = ({
   return (
     <div className={cn("w-full h-max bg-white")}>
       <div className={cn("w-11/12 md:w-5/6 m-auto md:py-20 space-y-20")}>
-        <div className={cn("flex max-md:flex-col place-items-center")}>
+        <div className={cn("flex max-md:flex-col place-items-center max-md:space-y-6")}>
           <div
             className={cn(
               "w-full md:w-2/5 max-md:text-center max-md:space-x-2 space-y-2"
