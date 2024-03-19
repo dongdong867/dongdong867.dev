@@ -58,7 +58,7 @@ const ContactPage = () => {
         <Contact label="GitHub" src="https://github.com/dongdong867" />
         <Contact label="LinkedIn" src="https://linkedin.com/in/dongdong867" />
         <Contact label="Social Media">
-          <div className={cn("w-full md:w-2/3 text-xl md:text-4xl space-x-4 max-md:space-y-2")}>
+          <div className={cn("w-full md:w-4/5 lg:w-2/3 text-xl md:text-4xl space-x-4 max-md:space-y-2")}>
             <Link
               href={"https://discordapp.com/users/978679087067435039"}
               className={cn("w-max rounded-full inline-block border border-gray px-4 py-3")}
