@@ -25,8 +25,10 @@ const WorksPage = () => {
 
       <Dong />
       <Csrone />
-      <Opennccu />
-      <What2Eat />
+      <div className={cn("w-11/12 md:w-4/5 m-auto flex max-md:flex-col space-x-14")}>
+        <Opennccu />
+        <What2Eat />
+      </div>
       <SimPOS />
       <GoCafe />
       <Oncoming />

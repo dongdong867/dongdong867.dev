@@ -7,7 +7,7 @@ import { Card } from "./card";
 export const Opennccu = () => {
   return (
     <Card>
-      <div className={cn("md:w-3/5 my-auto space-y-10")}>
+      <div className={cn("md:w-3/5 m-auto space-y-10")}>
         <Image
           src={"/projects/opennccu.png"}
           alt=""
@@ -31,7 +31,7 @@ export const Opennccu = () => {
         </div>
       </div>
 
-      <div className={cn("max-md:h-[380px]")} />
+      <div className={cn("h-[380px]")} />
 
       <Image
         src={"/projects/opennccu-mock.png"}
@@ -39,7 +39,7 @@ export const Opennccu = () => {
         width={260}
         height={600}
         className={cn(
-          "absolute md:top-12 max-md:-bottom-44 max-md:left-1/2 max-md:-translate-x-1/2 md:right-20 lg:right-40 xl:right-60",
+          "absolute -bottom-44 left-1/2 -translate-x-1/2",
           "drop-shadow-2xl transition-transform group-hover/card:scale-110"
         )}
       />
