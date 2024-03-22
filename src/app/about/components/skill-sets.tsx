@@ -3,7 +3,7 @@
 import { Translatable } from "@/components/translatable";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 type SkillSetsProps = {
   frontend: React.ReactNode;
