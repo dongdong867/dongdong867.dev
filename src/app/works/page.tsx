@@ -4,7 +4,6 @@ import { Dong } from "./components/dong";
 import { SimPOS } from "./components/simpos";
 import { What2Eat } from "./components/what2eat";
 import { Csrone } from "./components/csrone";
-import { LetsBeatGoogle } from "./components/lets-beat-google";
 import { GoCafe } from "./components/gocafe";
 import { Oncoming } from "./components/oncoming";
 
