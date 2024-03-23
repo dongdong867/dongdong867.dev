@@ -31,7 +31,7 @@ export const InviewTransition = ({
       variants={{ offscreen, onscreen }}
       viewport={{ once: !repeat }}
       className={cn(
-        "space-y-0.5 transition-all duration-50 ease-in-out",
+        "space-y-0.5 transition-all duration-500 ease-in-out",
         className
       )}
     >
