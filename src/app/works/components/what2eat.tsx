@@ -21,10 +21,13 @@ export const What2Eat = () => {
             <div className={cn("text-5xl font-medium tracking-tight")}>
               What2Eat
             </div>
-            <div className={cn("text-blue")}>( Close Beta )</div>
+            <div className={cn("flex flex-col place-items-center text-blue space-y-1")}>
+              <div>( Close Beta )</div>
+              <div>Case Study Working...</div>
+            </div>
           </div>
         </div>
-        <div className={cn("w-2/5 h-[380px]")} />
+        <div className={cn("w-2/5 h-[350px]")} />
         <Image
           src={"/projects/what2eat-mock.png"}
           alt=""
