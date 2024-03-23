@@ -1,3 +1,4 @@
+import { InviewTransition } from "@/components/inview-transition";
 import { Typewriter } from "@/components/typewriter";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -61,9 +62,7 @@ const OpenNCCUPage = () => {
 
       <div className={cn("h-[20dvh]")} />
 
-      <div
-        className={cn("w-5/6 md:w-max m-auto space-y-20 md:text-lg text-clip")}
-      >
+      <div className={cn("w-5/6 md:w-max m-auto space-y-20 md:text-lg")}>
         <div className={cn("md:max-w-[600px] space-y-10")}>
           <div className="w-max">
             <Image
@@ -75,48 +74,56 @@ const OpenNCCUPage = () => {
             />
           </div>
 
-          <div>
+          <InviewTransition>
             OpenNCCU is a non-profit organization founded by a group of students
             in NCCU, out goal is to drive the digital transformation in NCCU and
             offering outstanding digital experiment to students.
-          </div>
+          </InviewTransition>
 
-          <div>We launch a collection of exclusive digital tools for NCCU.</div>
+          <InviewTransition>
+            We launch a collection of exclusive digital tools for NCCU.
+          </InviewTransition>
         </div>
+      </div>
 
-        <div className={cn("flex space-x-10")}>
-          <div className={cn("max-md:space-y-10 md:flex md:space-x-10")}>
-            <Image
-              src={"/projects/opennccu/rain.png"}
-              alt=""
-              width={140}
-              height={140}
-              className={cn("drop-shadow-2xl")}
-            />
-            <Image
-              src={"/projects/opennccu/s-or-n.png"}
-              alt=""
-              width={140}
-              height={140}
-              className={cn("drop-shadow-2xl")}
-            />
-          </div>
-          <div className={cn("max-md:space-y-10 md:flex md:space-x-10")}>
-            <Image
-              src={"/projects/opennccu/gpa.png"}
-              alt=""
-              width={140}
-              height={140}
-              className={cn("drop-shadow-2xl")}
-            />
-            <Image
-              src={"/projects/opennccu/review.png"}
-              alt=""
-              width={140}
-              height={140}
-              className={cn("drop-shadow-2xl")}
-            />
-          </div>
+      <div className={cn("w-5/6 md:w-max m-auto flex pt-20 space-x-10")}>
+        <div className={cn("max-md:space-y-10 md:flex md:space-x-10")}>
+          <Image
+            src={"/projects/opennccu/rain.png"}
+            alt=""
+            width={140}
+            height={140}
+            className={cn("drop-shadow-2xl")}
+          />
+          <Image
+            src={"/projects/opennccu/s-or-n.png"}
+            alt=""
+            width={140}
+            height={140}
+            className={cn("drop-shadow-2xl")}
+          />
+        </div>
+        <div className={cn("max-md:space-y-10 md:flex md:space-x-10")}>
+          <Image
+            src={"/projects/opennccu/gpa.png"}
+            alt=""
+            width={140}
+            height={140}
+            className={cn("drop-shadow-2xl")}
+          />
+          <Image
+            src={"/projects/opennccu/review.png"}
+            alt=""
+            width={140}
+            height={140}
+            className={cn("drop-shadow-2xl")}
+          />
+        </div>
+      </div>
+
+      <div className={cn("h-[12dvh] flex place-items-end")}>
+        <div className={cn("h-max mx-auto  text-2xl font-medium text-gray")}>
+          And more coming soon...
         </div>
       </div>
       <div className={cn("h-[10dvh]")} />
