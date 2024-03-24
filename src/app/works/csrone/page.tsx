@@ -1,26 +1,13 @@
-import { InviewTransition } from "@/components/inview-transition";
-import { Typewriter } from "@/components/typewriter";
-import { cn } from "@/lib/utils";
+// components
 import Image from "next/image";
+import { CaseStudyTitle } from "@/components/case-study-title";
+import { InviewTransition } from "@/components/inview-transition";
+// utils
+import { cn } from "@/lib/utils";
 
 const CSRonePage = () => (
   <div className={cn("w-full md:w-4/5 m-auto")}>
-    <div
-      className={cn(
-        "h-[40dvh] space-y-4",
-        "flex flex-col justify-end place-items-center md:place-items-start"
-      )}
-    >
-      <Typewriter
-        words={[
-          {
-            text: "CSRone",
-            className: "text-5xl font-medium tracking-tight",
-          },
-        ]}
-      />
-      <div className={cn("text-gray")}>NLP/ LLM Research</div>
-    </div>
+    <CaseStudyTitle title="CSRone" label="NLP/ LLM Research" />
 
     <div
       className={cn(
@@ -49,13 +36,22 @@ const CSRonePage = () => (
 
     <div className={cn("h-[10dvh]")} />
 
-    <div className={cn("w-5/6 md:w-full md:max-w-[800px] max-md:m-auto space-y-20")}>
+    <div
+      className={cn(
+        "w-5/6 md:w-full md:max-w-[800px] max-md:m-auto space-y-20"
+      )}
+    >
       <InviewTransition className={cn("text-pretty text-2xl md:text-3xl")}>
-        We analyze companies' CSR reports and<br className={cn("max-md:hidden")} />{" "}
-        make effort to build an ESG database in Taiwan.
+        We analyze companies' CSR reports and
+        <br className={cn("max-md:hidden")} /> make effort to build an ESG
+        database in Taiwan.
       </InviewTransition>
 
-      <div className={cn("md:w-11/12 max-md:text-sm lg:text-lg text-pretty space-y-4")}>
+      <div
+        className={cn(
+          "md:w-11/12 max-md:text-sm lg:text-lg text-pretty space-y-4"
+        )}
+      >
         <div>
           CSR has gained significant importance as stakeholders prioritize
           ethical, social, and environmental factors when evaluating companies.

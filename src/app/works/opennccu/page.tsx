@@ -1,28 +1,15 @@
-import { InviewTransition } from "@/components/inview-transition";
-import { Translatable } from "@/components/translatable";
-import { Typewriter } from "@/components/typewriter";
-import { cn } from "@/lib/utils";
+// components
 import Image from "next/image";
+import { Translatable } from "@/components/translatable";
+import { CaseStudyTitle } from "@/components/case-study-title";
+import { InviewTransition } from "@/components/inview-transition";
+// utils
+import { cn } from "@/lib/utils";
 
 const OpenNCCUPage = () => {
   return (
     <div>
-      <div
-        className={cn(
-          "w-full md:w-4/5 h-[40dvh] m-auto space-y-4",
-          "flex flex-col justify-end place-items-center md:place-items-start"
-        )}
-      >
-        <Typewriter
-          words={[
-            {
-              text: "OpenNCCU",
-              className: "text-5xl font-medium tracking-tight",
-            },
-          ]}
-        />
-        <div className={cn("text-gray")}>PWA/ Web Development</div>
-      </div>
+      <CaseStudyTitle title="OpenNCCU" label="PWA/ Web Development" />
 
       <div
         className={cn(
