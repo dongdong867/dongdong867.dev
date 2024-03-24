@@ -24,7 +24,7 @@ export const GoCafe = () => {
             </div>
             <div className={cn("w-max m-auto")}>
               <Link href={"https://github.com/dongdong867/go-cafe"}>
-                <Translatable className={cn("text-center text-blue drop-shadow-md")}>
+                <Translatable className={cn("text-center text-blue")}>
                   Source Code ↗
                 </Translatable>
               </Link>

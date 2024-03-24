@@ -18,7 +18,9 @@ export const Dong = () => {
           )}
         >
           <div className={cn("text-gray")}>Brand Design</div>
-          <div className={cn("max-md:hidden flex place-items-center space-x-2")}>
+          <div
+            className={cn("max-md:hidden flex place-items-center space-x-2")}
+          >
             <Image
               src={"/projects/dong.png"}
               alt=""
@@ -26,19 +28,17 @@ export const Dong = () => {
               height={60}
               className={cn("size-10 md:size-16 dark:invert")}
             />
-            <div
-              className={cn("text-5xl font-medium tracking-tight")}
-            >
+            <div className={cn("text-5xl font-medium tracking-tight")}>
               Dong
             </div>
           </div>
           <div className={cn("w-max m-auto")}>
-              <Link href={"https://github.com/dongdong867/dongdong867.dev"}>
-                <Translatable className={cn("text-center text-blue drop-shadow-md")}>
-                  Source Code ↗
-                </Translatable>
-              </Link>
-            </div>
+            <Link href={"https://github.com/dongdong867/dongdong867.dev"}>
+              <Translatable className={cn("text-center text-blue")}>
+                Source Code ↗
+              </Translatable>
+            </Link>
+          </div>
           {/* <Link href={"/works/dong"}> */}
           {/* <div className={cn("text-blue text-lg after:content-['_↗']")}>Learn more</div> */}
           {/* </Link> */}
