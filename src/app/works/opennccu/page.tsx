@@ -1,4 +1,5 @@
 import { InviewTransition } from "@/components/inview-transition";
+import { Translatable } from "@/components/translatable";
 import { Typewriter } from "@/components/typewriter";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -88,36 +89,44 @@ const OpenNCCUPage = () => {
 
       <div className={cn("w-5/6 md:w-max m-auto flex pt-20 space-x-10")}>
         <div className={cn("max-md:space-y-10 md:flex md:space-x-10")}>
-          <Image
-            src={"/projects/opennccu/rain.png"}
-            alt=""
-            width={140}
-            height={140}
-            className={cn("drop-shadow-2xl")}
-          />
-          <Image
-            src={"/projects/opennccu/s-or-n.png"}
-            alt=""
-            width={140}
-            height={140}
-            className={cn("drop-shadow-2xl")}
-          />
+          <Translatable>
+            <Image
+              src={"/projects/opennccu/rain.png"}
+              alt=""
+              width={140}
+              height={140}
+              className={cn("drop-shadow-2xl")}
+            />
+          </Translatable>
+          <Translatable>
+            <Image
+              src={"/projects/opennccu/s-or-n.png"}
+              alt=""
+              width={140}
+              height={140}
+              className={cn("drop-shadow-2xl")}
+            />
+          </Translatable>
         </div>
         <div className={cn("max-md:space-y-10 md:flex md:space-x-10")}>
-          <Image
-            src={"/projects/opennccu/gpa.png"}
-            alt=""
-            width={140}
-            height={140}
-            className={cn("drop-shadow-2xl")}
-          />
-          <Image
-            src={"/projects/opennccu/review.png"}
-            alt=""
-            width={140}
-            height={140}
-            className={cn("drop-shadow-2xl")}
-          />
+          <Translatable>
+            <Image
+              src={"/projects/opennccu/gpa.png"}
+              alt=""
+              width={140}
+              height={140}
+              className={cn("drop-shadow-2xl")}
+            />
+          </Translatable>
+          <Translatable>
+            <Image
+              src={"/projects/opennccu/review.png"}
+              alt=""
+              width={140}
+              height={140}
+              className={cn("drop-shadow-2xl")}
+            />
+          </Translatable>
         </div>
       </div>
 
