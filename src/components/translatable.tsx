@@ -29,9 +29,13 @@ export const Translatable = ({ className = "", children }: Props) => {
   return (
     <div ref={ref}>
       <div ref={elementRef} className={cn("w-max h-max", className)}>
-        <div style={{ transform: `translate(${translateX}%, ${translateY}%)` }}>
+        <div
+          style={{ transform: `translate(${translateX}%, ${translateY}%)` }}
+          className={cn("max-md:hidden")}
+        >
           {children}
         </div>
+        <div className={cn("md:hidden")}>{children}</div>
       </div>
     </div>
   );
