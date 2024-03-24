@@ -21,15 +21,15 @@ export const Opennccu = () => {
           <div className={cn("text-5xl font-medium tracking-tight")}>
             OpenNCCU
           </div>
-          <div className={cn("w-max m-auto space-y-1")}>
+          <div className={cn("w-max m-auto flex flex-col place-items-center space-y-1")}>
             <Link href={"https://opennccu.com"} className={cn("block")}>
               <Translatable className={cn("text-center text-blue")}>
-                View Website ↗
+                View website ↗
               </Translatable>
             </Link>
             <Link href={"/works/opennccu"} className={cn("block")}>
               <Translatable className={cn("text-center text-blue")}>
-                Case Study ↗
+                Learn more ↗
               </Translatable>
             </Link>
           </div>
