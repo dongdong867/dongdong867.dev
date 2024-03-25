@@ -48,7 +48,7 @@ const CSRonePage = () => (
       )}
     >
       <InviewTransition className={cn("text-pretty text-2xl md:text-3xl")}>
-        We analyze companies' CSR reports and
+        We analyze companies&apos; CSR reports and
         <br className={cn("max-md:hidden")} /> make effort to build an ESG
         database in Taiwan.
       </InviewTransition>
@@ -67,7 +67,7 @@ const CSRonePage = () => (
         <div>
           Our research intends to explore the utilization of large language
           models, to automate the analysis of CSR reports. By leveraging the
-          capabilities of NLP and LLMs , we aim to efficiently extract key
+          capabilities of NLP and LLMs, we aim to efficiently extract key
           insights from CSR reports and generate concise summaries regarding the
           disclosure of CSR indices.
         </div>
