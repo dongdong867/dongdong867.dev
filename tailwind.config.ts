@@ -20,7 +20,7 @@ const config = {
     extend: {
       backgroundImage: {
         "mac-light": "url('/mac/background-light.png')",
-        "mac-dark": "url('/mac/background-dark.png')"
+        "mac-dark": "url('/mac/background-dark.png')",
       },
       colors: {
         foreground: "rgb(var(--foreground) / <alpha-value>)",
@@ -55,10 +55,20 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "sliding-top": {
+          "0%, 40%": { transform: "translateY(50%)", opacity: "100" },
+          "60%, 100%": { transform: "translateY(-50%)", opacity: "0" },
+        },
+        "sliding-down": {
+          "0%, 40%": { transform: "translateY(50%)", opacity: "0" },
+          "60%, 100%": { transform: "translateY(-50%)", opacity: "100" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "sliding-top": "sliding-top 2s ease-in-out infinite alternate",
+        "sliding-down": "sliding-down 2s ease-in-out infinite alternate",
       },
     },
   },

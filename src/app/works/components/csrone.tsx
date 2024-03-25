@@ -1,6 +1,8 @@
 import { cn } from "@/lib/utils";
 import { Card } from "./card";
 import Image from "next/image";
+import Link from "next/link";
+import { Translatable } from "@/components/translatable";
 
 export const Csrone = () => {
   return (
@@ -15,7 +17,9 @@ export const Csrone = () => {
           alt=""
           width={200}
           height={200}
-          className={cn("drop-shadow-2xl transition-transform group-hover/card:scale-110")}
+          className={cn(
+            "drop-shadow-2xl transition-transform group-hover/card:scale-110"
+          )}
         />
         <div className={cn("w-max text-center space-y-4")}>
           <div className={cn("text-gray")}>NLP Research</div>
@@ -23,6 +27,11 @@ export const Csrone = () => {
             <div className={cn("text-5xl")}>CSRone</div>
             <div className={cn("text-lg md:text-2xl")}>w/ NCCU</div>
           </div>
+          <Link href={"/works/csrone"} className={cn("block m-auto")}>
+            <Translatable className={cn("m-auto text-center text-blue")}>
+              Learn more ↗
+            </Translatable>
+          </Link>
         </div>
       </div>
     </Card>

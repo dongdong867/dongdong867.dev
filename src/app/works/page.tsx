@@ -4,7 +4,6 @@ import { Dong } from "./components/dong";
 import { SimPOS } from "./components/simpos";
 import { What2Eat } from "./components/what2eat";
 import { Csrone } from "./components/csrone";
-import { LetsBeatGoogle } from "./components/lets-beat-google";
 import { GoCafe } from "./components/gocafe";
 import { Oncoming } from "./components/oncoming";
 
@@ -25,7 +24,7 @@ const WorksPage = () => {
 
       <Dong />
       <Csrone />
-      <div className={cn("w-full md:w-4/5 m-auto flex max-md:flex-col max-md:space-y-14 md:space-x-14")}>
+      <div className={cn("w-full md:w-4/5 m-auto flex max-md:flex-col max-md:space-y-14 md:space-x-4 lg:space-x-14")}>
         <Opennccu />
         <What2Eat />
       </div>

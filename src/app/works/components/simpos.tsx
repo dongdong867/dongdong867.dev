@@ -10,13 +10,18 @@ export const SimPOS = () => {
       <div className={cn("w-max m-auto text-center space-y-4")}>
         <div className={cn("text-gray")}>iOS Development</div>
         <div className={cn("text-5xl font-medium tracking-tight")}>SimPOS</div>
-        <div className={cn("w-max m-auto")}>
-              <Link href={"https://github.com/dongdong867/SimPOS"}>
-                <Translatable className={cn("text-center text-blue drop-shadow-md")}>
-                  Source Code ↗
-                </Translatable>
-              </Link>
-            </div>
+        <div className={cn("w-max m-auto flex flex-col place-items-center")}>
+          <Link href={"https://github.com/dongdong867/SimPOS"}>
+            <Translatable className={cn("text-center text-blue")}>
+              Source code ↗
+            </Translatable>
+          </Link>
+          <Link href={"/works/simpos"}>
+            <Translatable className={cn("text-center text-blue")}>
+              Learn more ↗
+            </Translatable>
+          </Link>
+        </div>
       </div>
 
       <div className={cn("h-[300px] md:h-[280px]")} />
