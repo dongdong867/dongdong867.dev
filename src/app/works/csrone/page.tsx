@@ -6,7 +6,7 @@ import { InviewTransition } from "@/components/inview-transition";
 import { cn } from "@/lib/utils";
 
 const CSRonePage = () => (
-  <div className={cn("w-full md:w-4/5 m-auto")}>
+  <div>
     <CaseStudyTitle title="CSRone" label="NLP/ LLM Research" />
 
     <div
@@ -24,7 +24,12 @@ const CSRonePage = () => (
       <div className={cn("text-5xl font-medium md:hidden")}>LLM</div>
     </div>
 
-    <div className="w-full h-[40dvh] min-h-[240px] bg-gray5 flex place-items-center">
+    <div
+      className={cn(
+        "w-full md:w-5/6 h-[40dvh] min-h-[240px]",
+        "m-auto bg-gray5 flex place-items-center"
+      )}
+    >
       <Image
         src={"/projects/csrone.png"}
         alt=""
@@ -36,9 +41,10 @@ const CSRonePage = () => (
 
     <div className={cn("h-[10dvh]")} />
 
+    <div className={cn("w-full md:w-5/6 m-auto")}>
     <div
       className={cn(
-        "w-5/6 md:w-full md:max-w-[800px] max-md:m-auto space-y-20"
+        "w-5/6 md:max-w-[800px] md:ml-20 max-md:m-auto space-y-20"
       )}
     >
       <InviewTransition className={cn("text-pretty text-2xl md:text-3xl")}>
@@ -66,6 +72,7 @@ const CSRonePage = () => (
           disclosure of CSR indices.
         </div>
       </div>
+    </div>
     </div>
 
     <div className={cn("h-[10dvh]")} />
