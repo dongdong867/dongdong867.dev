@@ -10,6 +10,7 @@ export const SimPOS = () => {
       <div className={cn("w-max m-auto text-center space-y-4")}>
         <div className={cn("text-gray")}>iOS Development</div>
         <div className={cn("text-5xl font-medium tracking-tight")}>SimPOS</div>
+        <div> 2024 Swift Student Challenge Winning Project</div>
         <div className={cn("w-max m-auto flex flex-col place-items-center")}>
           <Link href={"https://github.com/dongdong867/SimPOS"}>
             <Translatable className={cn("text-center text-blue")}>
