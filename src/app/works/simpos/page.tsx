@@ -15,11 +15,7 @@ const SimPOSPage = () => {
       >
         <div className="space-x-4 text-2xl text-gray">
           Sometimes
-          <span
-            className={cn(
-              "text-6xl text-foreground tracking-tight font-medium mx-4"
-            )}
-          >
+          <span className={cn("text-6xl text-foreground font-medium mx-4")}>
             Simple
           </span>
           is all people need.
@@ -37,6 +33,12 @@ const SimPOSPage = () => {
       </div>
 
       <div className={cn("h-[10dvh]")} />
+
+      <div className={cn("text-4xl text-center text-gray")}>
+        A  WWDC24 Swift Student Challenge Winning Project.
+      </div>
+
+      <div className={cn("h-[20dvh]")} />
 
       <div className={cn("w-full md:w-5/6 m-auto")}>
         <div
@@ -58,7 +60,7 @@ const SimPOSPage = () => {
         </div>
       </div>
 
-      <div className={cn("h-[10dvh]")} />
+      <div className={cn("h-[20dvh]")} />
     </div>
   );
 };
