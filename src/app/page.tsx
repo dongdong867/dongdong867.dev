@@ -5,6 +5,7 @@ import { InviewTransition } from "@/components/inview-transition";
 import { Experience } from "./components/experience";
 import Link from "next/link";
 import { Translatable } from "@/components/translatable";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -34,46 +35,38 @@ const Home = () => {
       </div>
       <div
         className={cn(
-          "w-full h-[120dvh] m-auto bg-white text-black",
+          "w-full h-screen sm:h-[120dvh] m-auto bg-white text-black",
           "flex justify-center place-items-center"
         )}
       >
-        <div>
-          <video
-            width={500}
-            muted
-            autoPlay
+        <div className={cn("size-full")}>
+          <Image
+            src={"/home/swift-student-challenge-16x9.jpg"}
+            alt=""
+            width={1920}
+            height={1080}
             className={cn(
-              "size-full md:max-h-[500px] lg:max-h-[600px] max-md:hidden"
+              "w-full m-auto aspect-video max-md:hidden lg:max-w-5xl"
             )}
-          >
-            <source
-              src="/home/swift-student-challenge-16x9.mov"
-              type="video/mp4"
-            />
-          </video>
-          <video
-            width={500}
-            muted
-            autoPlay
-            className={cn("w-max aspect-square md:hidden")}
-          >
-            <source
-              src="/home/swift-student-challenge-1x1.mov"
-              type="video/mp4"
-            />
-          </video>
+          />
+          <Image
+            src={"/home/swift-student-challenge-1x1.jpg"}
+            alt=""
+            width={768}
+            height={768}
+            className={cn("w-full aspect-square md:hidden")}
+          />
 
           <div
             className={cn(
               "w-5/6 m-auto py-8 md:py-20 text-pretty flex flex-col place-items-center"
             )}
           >
-            <div className={cn("text-lg md:text-2xl text-center")}>
+            <div className={cn("text-lg md:text-xl text-center tracking-wide")}>
               Selected as the winner of Swift Student Challenge of 2024 by Apple
               Inc.
             </div>
-            <Link href={"/works/simpos"} className={cn("md:text-xl text-blue")}>
+            <Link href={"/works/simpos"} className={cn("md:text-lg text-blue")}>
               <Translatable className={cn("p-4")}>View project ↗</Translatable>
             </Link>
           </div>
