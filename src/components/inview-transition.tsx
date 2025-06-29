@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Variant, motion } from "framer-motion";
+import { Variant, motion } from "motion/react";
 
 type InviewTransitionProps = {
   repeat?: boolean;

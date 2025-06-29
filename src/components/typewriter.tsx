@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { motion, stagger, useAnimate, useInView } from "framer-motion";
+import { motion, stagger, useAnimate, useInView } from "motion/react";
 import { useEffect } from "react";
 
 type TypewriterProps = {
@@ -36,7 +36,7 @@ export const Typewriter = ({
         { duration: 0.1, delay: stagger(0.2), ease: "easeInOut" }
       );
     }
-  }, [isInView]);
+  }, [animate, isInView]);
 
   const typingWords = () => {
     return (
