@@ -1,11 +1,11 @@
 import { cn } from "@/lib/utils";
-import { Opennccu } from "./components/opennccu";
-import { Dong } from "./components/dong";
-import { SimPOS } from "./components/simpos";
-import { What2Eat } from "./components/what2eat";
 import { Csrone } from "./components/csrone";
+import { Dong } from "./components/dong";
 import { GoCafe } from "./components/gocafe";
 import { Oncoming } from "./components/oncoming";
+import { Opennccu } from "./components/opennccu";
+import { SimPOS } from "./components/simpos";
+import { What2Eat } from "./components/what2eat";
 
 const WorksPage = () => {
   return (
@@ -24,7 +24,6 @@ const WorksPage = () => {
 
       <Dong />
       <SimPOS />
-      <Csrone />
       <div
         className={cn(
           "m-auto flex w-full max-md:flex-col max-md:space-y-14 md:w-4/5 md:space-x-4 lg:space-x-14"
@@ -33,6 +32,7 @@ const WorksPage = () => {
         <Opennccu />
         <What2Eat />
       </div>
+      <Csrone />
       <GoCafe />
       <Oncoming />
     </div>
