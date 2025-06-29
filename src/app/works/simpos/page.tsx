@@ -7,20 +7,13 @@ const SimPOSPage = () => {
     <div>
       <CaseStudyTitle title="SimPOS" label="iOS Development" />
 
-      <div
-        className={cn(
-          "h-[40dvh] w-full space-y-4",
-          "flex place-items-center justify-center"
-        )}
-      >
-        <div className="space-x-4 text-2xl text-gray">
-          Sometimes
-          <span className={cn("mx-4 text-6xl font-medium text-foreground")}>
-            Simple
-          </span>
-          is all people need.
-        </div>
+      <div className={cn("h-[16dvh]")} />
+
+      <div className={cn("text-center text-4xl text-gray")}>
+        A  WWDC24 Swift Student Challenge Winning Project.
       </div>
+
+      <div className={cn("h-[16dvh]")} />
 
       <div className="m-auto flex w-full place-items-center bg-gray6 py-20 md:w-5/6">
         <Image
@@ -32,15 +25,17 @@ const SimPOSPage = () => {
         />
       </div>
 
-      <div className={cn("h-[10dvh]")} />
-
-      <div className={cn("text-center text-4xl text-gray")}>
-        A  WWDC24 Swift Student Challenge Winning Project.
-      </div>
-
-      <div className={cn("h-[20dvh]")} />
-
       <div className={cn("m-auto w-full md:w-5/6")}>
+        <div className={cn("flex h-[30dvh] place-items-center justify-center")}>
+          <div className=" w-5/6 space-x-4 text-2xl text-gray">
+            Sometimes
+            <span className={cn("mx-4 text-6xl font-medium text-foreground")}>
+              Simple
+            </span>
+            is all people need.
+          </div>
+        </div>
+
         <div
           className={cn(
             "w-5/6 space-y-8 text-pretty text-lg md:ml-20 md:max-w-[800px]"
