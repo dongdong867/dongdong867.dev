@@ -8,15 +8,15 @@ export const WorkStack = () => {
     <div
       style={{ colorScheme: "dark" }}
       className={cn(
-        "w-screen h-[60dvh] md:h-[110dvh] flex m-auto text-white bg-black dark dark:bg-background py-10"
+        "dark m-auto flex h-[60dvh] w-screen bg-black py-10 text-white dark:bg-background md:h-[110dvh]"
       )}
     >
-      <div className="relative m-auto w-max h-max">
-        <div className="relative w-max m-auto">
-          <div className="mb-4 text-xl md:text-3xl font-semibold">
+      <div className="relative m-auto h-max w-max">
+        <div className="relative m-auto w-max">
+          <div className="mb-4 text-xl font-semibold md:text-3xl">
             I Develop
           </div>
-          <div className="pl-10 md:pl-20 text-4xl md:text-7xl xl:text-8xl font-bold md:tracking-tight">
+          <div className="pl-10 text-4xl font-bold md:pl-20 md:text-7xl md:tracking-tight xl:text-8xl">
             <div className="relative z-20">Frontend</div>
             <div>Backend</div>
             <div>Database</div>
@@ -29,14 +29,14 @@ export const WorkStack = () => {
           alt=""
           width={300}
           height={300}
-          className="absolute w-1/3 top-[12%] md:top-[5%] lg:top-[3%] left-[70%] z-10"
+          className="absolute left-[70%] top-[12%] z-10 w-1/3 md:top-[5%] lg:top-[3%]"
         />
         <Image
           src={Cone}
           alt=""
           width={300}
           height={300}
-          className="absolute w-1/3 -left-[8%] lg:-left-[10%] -bottom-[12%]"
+          className="absolute -bottom-[12%] -left-[8%] w-1/3 lg:-left-[10%]"
         />
       </div>
     </div>

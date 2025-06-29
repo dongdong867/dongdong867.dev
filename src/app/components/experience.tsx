@@ -4,8 +4,8 @@ import { InviewTransition } from "@/components/inview-transition";
 
 export const Experience = () => {
   return (
-    <div className={cn("w-max md:w-4/5 h-max m-auto pt-28 space-y-6")}>
-      <div className={cn("text-3xl py-10")}>Experience</div>
+    <div className={cn("m-auto h-max w-max space-y-6 pt-28 md:w-4/5")}>
+      <div className={cn("py-10 text-3xl")}>Experience</div>
       {experiences.map((experience) => {
         return (
           <InviewTransition
@@ -25,13 +25,13 @@ export const Experience = () => {
           >
             <div
               className={cn(
-                "w-full flex max-md:flex-col justify-between place-items-baseline text-lg md:text-xl"
+                "flex w-full place-items-baseline justify-between text-lg max-md:flex-col md:text-xl"
               )}
             >
               <div className={cn("font-medium")}>
                 {experience.position} @{experience.company}
               </div>
-              <div className={cn("text-gray text-base")}>
+              <div className={cn("text-base text-gray")}>
                 {experience.start} - {experience.end}
               </div>
             </div>

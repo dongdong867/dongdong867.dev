@@ -42,7 +42,7 @@ const ThemeToggle = () => {
           <Translatable>
             <MdSunny className={cn("size-10 p-1.5 dark:hidden")} />
             <MdDarkMode
-              className={cn("size-10 p-1.5 hidden dark:block dark:scale-100")}
+              className={cn("hidden size-10 p-1.5 dark:block dark:scale-100")}
             />
           </Translatable>
         </Button>

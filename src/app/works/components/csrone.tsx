@@ -9,7 +9,7 @@ export const Csrone = () => {
     <Card>
       <div
         className={cn(
-          "w-max flex place-items-center max-md:flex-col-reverse m-auto max-md:gap-y-10 md:space-x-20"
+          "m-auto flex w-max place-items-center max-md:flex-col-reverse max-md:gap-y-10 md:space-x-20"
         )}
       >
         <Image
@@ -21,13 +21,13 @@ export const Csrone = () => {
             "drop-shadow-2xl transition-transform group-hover/card:scale-110"
           )}
         />
-        <div className={cn("w-max text-center space-y-4")}>
+        <div className={cn("w-max space-y-4 text-center")}>
           <div className={cn("text-gray")}>NLP Research</div>
           <div className={cn("font-medium tracking-tight")}>
             <div className={cn("text-5xl")}>CSRone</div>
             <div className={cn("text-lg md:text-2xl")}>w/ NCCU</div>
           </div>
-          <Link href={"/works/csrone"} className={cn("block m-auto")}>
+          <Link href={"/works/csrone"} className={cn("m-auto block")}>
             <Translatable className={cn("m-auto text-center text-blue")}>
               Learn more ↗
             </Translatable>

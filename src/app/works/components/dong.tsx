@@ -9,30 +9,30 @@ export const Dong = () => {
     <Card>
       <div
         className={cn(
-          "w-full m-auto text-center space-y-16 flex flex-col justify-around place-items-center"
+          "m-auto flex w-full flex-col place-items-center justify-around space-y-16 text-center"
         )}
       >
         <div
           className={cn(
-            "w-1/2 md:w-full md:space-y-4 flex flex-col place-items-center"
+            "flex w-1/2 flex-col place-items-center md:w-full md:space-y-4"
           )}
         >
           <div className={cn("text-gray")}>Brand Design</div>
           <div
-            className={cn("max-md:hidden flex place-items-center space-x-2")}
+            className={cn("flex place-items-center space-x-2 max-md:hidden")}
           >
             <Image
               src={"/projects/dong.png"}
               alt=""
               width={60}
               height={60}
-              className={cn("size-10 md:size-16 dark:invert")}
+              className={cn("size-10 dark:invert md:size-16")}
             />
             <div className={cn("text-5xl font-medium tracking-tight")}>
               Dong
             </div>
           </div>
-          <div className={cn("w-max m-auto")}>
+          <div className={cn("m-auto w-max")}>
             <Link href={"https://github.com/dongdong867/dongdong867.dev"}>
               <Translatable className={cn("text-center text-blue")}>
                 Source Code ↗
@@ -46,7 +46,7 @@ export const Dong = () => {
 
         <div
           className={cn(
-            "max-md:w-4/5 flex place-items-center drop-shadow-2xl",
+            "flex place-items-center drop-shadow-2xl max-md:w-4/5",
             "transition-transform group-hover/card:scale-110"
           )}
         >
@@ -63,7 +63,7 @@ export const Dong = () => {
             alt=""
             width={590}
             height={140}
-            className={cn("h-max my-auto dark:hidden")}
+            className={cn("my-auto h-max dark:hidden")}
           />
         </div>
       </div>

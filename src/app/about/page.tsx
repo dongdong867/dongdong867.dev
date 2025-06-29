@@ -15,9 +15,9 @@ import { cn } from "@/lib/utils";
 const AboutPage = () => {
   return (
     <div>
-      <div className={cn("h-[80dvh] flex place-items-center")}>
-        <div className={cn("w-5/6 md:w-4/5 m-auto text-4xl md:text-5xl")}>
-          <div className={cn("text-xl md:text-3xl text-gray")}>
+      <div className={cn("flex h-[80dvh] place-items-center")}>
+        <div className={cn("m-auto w-5/6 text-4xl md:w-4/5 md:text-5xl")}>
+          <div className={cn("text-xl text-gray md:text-3xl")}>
             Living an ordinary life with
           </div>
           <InviewTransition>extraordinary moments.</InviewTransition>
@@ -25,7 +25,7 @@ const AboutPage = () => {
       </div>
       <div
         className={cn(
-          "w-full md:w-5/6 m-auto rounded-sm bg-gray6/50 dark:bg-white flex justify-end px-20 md:px-40 py-4 md:py-8"
+          "m-auto flex w-full justify-end rounded-sm bg-gray6/50 px-20 py-4 dark:bg-white md:w-5/6 md:px-40 md:py-8"
         )}
       >
         <Image
@@ -37,11 +37,11 @@ const AboutPage = () => {
       </div>
       <div
         className={cn(
-          "w-5/6 h-[60dvh] md:h-[80dvh] flex flex-col justify-center m-auto space-y-2 text-center"
+          "m-auto flex h-[60dvh] w-5/6 flex-col justify-center space-y-2 text-center md:h-[80dvh]"
         )}
       >
-        <div className={cn("md:text-lg text-gray")}>On the path toward</div>
-        <div className={cn("text-2xl md:text-5xl md:space-y-4")}>
+        <div className={cn("text-gray md:text-lg")}>On the path toward</div>
+        <div className={cn("text-2xl md:space-y-4 md:text-5xl")}>
           <InviewTransition>enhancing lives and</InviewTransition>
           <InviewTransition className={cn("delay-200")}>
             fostering positive change

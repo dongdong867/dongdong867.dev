@@ -1,18 +1,18 @@
+import { InviewTransition } from "@/components/inview-transition";
+import { Translatable } from "@/components/translatable";
 import { Typewriter } from "@/components/typewriter";
 import { cn } from "@/lib/utils";
-import { WorkStack } from "./components/work-stack";
-import { InviewTransition } from "@/components/inview-transition";
-import { Experience } from "./components/experience";
-import Link from "next/link";
-import { Translatable } from "@/components/translatable";
 import Image from "next/image";
+import Link from "next/link";
+import { Experience } from "./components/experience";
+import { WorkStack } from "./components/work-stack";
 
 const Home = () => {
   return (
     <>
       <div
         className={cn(
-          "w-max md:w-2/3 m-auto h-screen",
+          "m-auto h-screen w-max md:w-2/3",
           "flex flex-col justify-center space-y-6"
         )}
       >
@@ -26,7 +26,7 @@ const Home = () => {
           ]}
           className={cn("text-4xl md:text-5xl")}
         />
-        <InviewTransition className={cn("py-2 -space-y-px text-gray text-lg")}>
+        <InviewTransition className={cn("-space-y-px py-2 text-lg text-gray")}>
           <div>A Fullstack Developer</div>
           <div>A Mobile Application Developer</div>
           <div>A NLP Engineer</div>
@@ -35,18 +35,18 @@ const Home = () => {
       </div>
       <div
         className={cn(
-          "w-full h-screen sm:h-[120dvh] m-auto bg-white text-black",
-          "flex justify-center place-items-center"
+          "m-auto h-screen w-full bg-white text-black sm:h-[120dvh]",
+          "flex place-items-center justify-center"
         )}
       >
-        <div className={cn("size-full")}>
+        <div className={cn("w-full  ")}>
           <Image
             src={"/home/swift-student-challenge-16x9.jpg"}
             alt=""
             width={1920}
             height={1080}
             className={cn(
-              "w-full m-auto aspect-video max-md:hidden lg:max-w-5xl"
+              "m-auto aspect-video w-full max-md:hidden lg:max-w-5xl"
             )}
           />
           <Image
@@ -54,19 +54,19 @@ const Home = () => {
             alt=""
             width={768}
             height={768}
-            className={cn("w-full aspect-square md:hidden")}
+            className={cn("aspect-square w-full md:hidden")}
           />
 
           <div
             className={cn(
-              "w-5/6 m-auto py-8 md:py-20 text-pretty flex flex-col place-items-center"
+              "m-auto flex w-5/6 flex-col place-items-center text-pretty py-8 md:py-20"
             )}
           >
-            <div className={cn("text-lg md:text-xl text-center tracking-wide")}>
+            <div className={cn("text-center text-lg tracking-wide md:text-xl")}>
               Selected as the winner of Swift Student Challenge of 2024 by Apple
               Inc.
             </div>
-            <Link href={"/works/simpos"} className={cn("md:text-lg text-blue")}>
+            <Link href={"/works/simpos"} className={cn("text-blue md:text-lg")}>
               <Translatable className={cn("p-4")}>View project ↗</Translatable>
             </Link>
           </div>

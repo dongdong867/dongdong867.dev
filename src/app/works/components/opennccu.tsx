@@ -7,7 +7,7 @@ import { Card } from "./card";
 export const Opennccu = () => {
   return (
     <Card className={cn("h-full")}>
-      <div className={cn("md:w-3/5 m-auto space-y-10")}>
+      <div className={cn("m-auto space-y-10 md:w-3/5")}>
         <Image
           src={"/projects/opennccu.png"}
           alt=""
@@ -21,7 +21,11 @@ export const Opennccu = () => {
           <div className={cn("text-5xl font-medium tracking-tight")}>
             OpenNCCU
           </div>
-          <div className={cn("w-max m-auto flex flex-col place-items-center space-y-1")}>
+          <div
+            className={cn(
+              "m-auto flex w-max flex-col place-items-center space-y-1"
+            )}
+          >
             <Link href={"https://opennccu.com"} className={cn("block")}>
               <Translatable className={cn("text-center text-blue")}>
                 View website ↗

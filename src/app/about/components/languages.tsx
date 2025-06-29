@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils"
-import { SkillIcon } from "./SkillIcon"
+import { cn } from "@/lib/utils";
+import { SkillIcon } from "./SkillIcon";
 
 export const Languages = () => {
   return (
@@ -30,5 +30,5 @@ export const Languages = () => {
         <SkillIcon src="csharp.png" />
       </div>
     </>
-  )
-}
+  );
+};

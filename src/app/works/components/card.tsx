@@ -10,8 +10,8 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "relative w-11/12 md:w-4/5  h-max py-10 md:py-20 m-auto",
-        "bg-gray6 rounded-lg overflow-hidden group/card",
+        "relative m-auto h-max  w-11/12 py-10 md:w-4/5 md:py-20",
+        "group/card overflow-hidden rounded-lg bg-gray6",
         className
       )}
     >

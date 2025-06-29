@@ -14,13 +14,13 @@ const Contact = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div className={cn("w-full md:w-3/4 md:min-h-[20dvh] p-8")}>
-      <div className={cn("lg:flex max-lg:space-y-2")}>
-        <div className={cn("w-1/3 text-sm md:text-lg text-gray")}>{label}</div>
+    <div className={cn("w-full p-8 md:min-h-[20dvh] md:w-3/4")}>
+      <div className={cn("max-lg:space-y-2 lg:flex")}>
+        <div className={cn("w-1/3 text-sm text-gray md:text-lg")}>{label}</div>
         {src && (
           <Link
             href={src ?? ""}
-            className={cn("w-2/3 text-xl block md:text-4xl tracking-tight")}
+            className={cn("block w-2/3 text-xl tracking-tight md:text-4xl")}
           >
             {src.replace("https://", "").replace("mailto:", "")}
           </Link>
@@ -36,19 +36,21 @@ const ContactPage = () => {
     <>
       <div
         className={cn(
-          "w-5/6 md:w-4/5 h-[80dvh] flex m-auto place-items-center"
+          "m-auto flex h-[80dvh] w-5/6 place-items-center md:w-4/5"
         )}
       >
         <div className={cn("text-4xl md:text-6xl")}>
-          <div className={cn("text-gray text-xl md:text-2xl")}>
+          <div className={cn("text-xl text-gray md:text-2xl")}>
             Feel free to
           </div>
-          <InviewTransition className={cn("font-medium tracking-tight")}>GET IN TOUCH</InviewTransition>
+          <InviewTransition className={cn("font-medium tracking-tight")}>
+            GET IN TOUCH
+          </InviewTransition>
         </div>
       </div>
       <div
         className={cn(
-          "w-full m-auto flex flex-col place-items-end border-t border-gray4 divide-y divide-gray5"
+          "m-auto flex w-full flex-col place-items-end divide-y divide-gray5 border-t border-gray4"
         )}
       >
         <Contact label="Location">
@@ -58,16 +60,24 @@ const ContactPage = () => {
         <Contact label="GitHub" src="https://github.com/dongdong867" />
         <Contact label="LinkedIn" src="https://linkedin.com/in/dongdong867" />
         <Contact label="Social Media">
-          <div className={cn("w-full md:w-4/5 lg:w-2/3 text-xl md:text-4xl space-x-4 max-md:space-y-2")}>
+          <div
+            className={cn(
+              "w-full space-x-4 text-xl max-md:space-y-2 md:w-4/5 md:text-4xl lg:w-2/3"
+            )}
+          >
             <Link
               href={"https://discordapp.com/users/978679087067435039"}
-              className={cn("w-max rounded-full inline-block border border-gray px-4 py-3")}
+              className={cn(
+                "inline-block w-max rounded-full border border-gray px-4 py-3"
+              )}
             >
               Discord
             </Link>
             <Link
               href={"https://instagram.com/dongdong_867"}
-              className={cn("w-max rounded-full inline-block border border-gray px-4 py-3")}
+              className={cn(
+                "inline-block w-max rounded-full border border-gray px-4 py-3"
+              )}
             >
               Instagram
             </Link>

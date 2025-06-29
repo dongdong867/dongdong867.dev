@@ -7,7 +7,7 @@ export const What2Eat = () => {
   return (
     <Card>
       <div className={cn("flex flex-col justify-around")}>
-        <div className={cn("md:w-1/2 m-auto space-y-10")}>
+        <div className={cn("m-auto space-y-10 md:w-1/2")}>
           <Image
             src={"/projects/what2eat.png"}
             alt=""
@@ -21,13 +21,17 @@ export const What2Eat = () => {
             <div className={cn("text-5xl font-medium tracking-tight")}>
               What2Eat
             </div>
-            <div className={cn("flex flex-col place-items-center text-blue space-y-1")}>
+            <div
+              className={cn(
+                "flex flex-col place-items-center space-y-1 text-blue"
+              )}
+            >
               <div>( Close Beta )</div>
               <div>Case Study Working...</div>
             </div>
           </div>
         </div>
-        <div className={cn("w-2/5 h-[350px]")} />
+        <div className={cn("h-[350px] w-2/5")} />
         <Image
           src={"/projects/what2eat-mock.png"}
           alt=""

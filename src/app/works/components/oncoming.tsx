@@ -7,8 +7,8 @@ export const Oncoming = () => {
     <Card>
       <div
         className={cn(
-          "w-max h-max m-auto text-gray text-2xl md:text-5xl font-medium tracking-tight"
-          )}
+          "m-auto h-max w-max text-2xl font-medium tracking-tight text-gray md:text-5xl"
+        )}
       >
         <Typewriter
           words={[{ text: "More works oncoming..." }]}

@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils"
-import { SkillIcon } from "./SkillIcon"
+import { cn } from "@/lib/utils";
+import { SkillIcon } from "./SkillIcon";
 
 export const Backend = () => {
   return (
@@ -30,5 +30,5 @@ export const Backend = () => {
         <SkillIcon src="django.png" />
       </div>
     </>
-  )
-}
+  );
+};

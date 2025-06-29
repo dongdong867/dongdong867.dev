@@ -9,14 +9,14 @@ import { Oncoming } from "./components/oncoming";
 
 const WorksPage = () => {
   return (
-    <div className={cn("py-20 space-y-14")}>
+    <div className={cn("space-y-14 py-20")}>
       <div
         className={cn(
-          "w-4/5 md:w-2/3 h-80 space-y-1",
-          "flex flex-col justify-center m-auto"
+          "h-80 w-4/5 space-y-1 md:w-2/3",
+          "m-auto flex flex-col justify-center"
         )}
       >
-        <div className={cn("md:text-lg text-gray tracking-tight")}>
+        <div className={cn("tracking-tight text-gray md:text-lg")}>
           Growth begins with
         </div>
         <div className={cn("text-5xl")}>the smallest of shifts.</div>
@@ -25,7 +25,11 @@ const WorksPage = () => {
       <Dong />
       <SimPOS />
       <Csrone />
-      <div className={cn("w-full md:w-4/5 m-auto flex max-md:flex-col max-md:space-y-14 md:space-x-4 lg:space-x-14")}>
+      <div
+        className={cn(
+          "m-auto flex w-full max-md:flex-col max-md:space-y-14 md:w-4/5 md:space-x-4 lg:space-x-14"
+        )}
+      >
         <Opennccu />
         <What2Eat />
       </div>

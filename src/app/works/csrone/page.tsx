@@ -11,14 +11,14 @@ const CSRonePage = () => (
 
     <div
       className={cn(
-        "w-3/4 md:w-full h-[40dvh] m-auto space-y-2 text-center",
-        "flex flex-col justify-center place-items-center"
+        "m-auto h-[40dvh] w-3/4 space-y-2 text-center md:w-full",
+        "flex flex-col place-items-center justify-center"
       )}
     >
-      <div className={cn("text-xl md:text-2xl text-gray")}>
+      <div className={cn("text-xl text-gray md:text-2xl")}>
         Optimizing workflow with the power of
       </div>
-      <div className={cn("md:text-5xl font-medium max-md:hidden")}>
+      <div className={cn("font-medium max-md:hidden md:text-5xl")}>
         Large Language Model
       </div>
       <div className={cn("text-5xl font-medium md:hidden")}>LLM</div>
@@ -26,8 +26,8 @@ const CSRonePage = () => (
 
     <div
       className={cn(
-        "w-full md:w-5/6 h-[40dvh] min-h-[240px]",
-        "m-auto bg-gray5 flex place-items-center"
+        "h-[40dvh] min-h-[240px] w-full md:w-5/6",
+        "m-auto flex place-items-center bg-gray5"
       )}
     >
       <Image
@@ -41,38 +41,38 @@ const CSRonePage = () => (
 
     <div className={cn("h-[10dvh]")} />
 
-    <div className={cn("w-full md:w-5/6 m-auto")}>
-    <div
-      className={cn(
-        "w-5/6 md:max-w-[800px] md:ml-20 max-md:m-auto space-y-20"
-      )}
-    >
-      <InviewTransition className={cn("text-pretty text-2xl md:text-3xl")}>
-        We analyze companies&apos; CSR reports and
-        <br className={cn("max-md:hidden")} /> make effort to build an ESG
-        database in Taiwan.
-      </InviewTransition>
-
+    <div className={cn("m-auto w-full md:w-5/6")}>
       <div
         className={cn(
-          "md:w-11/12 max-md:text-sm lg:text-lg text-pretty space-y-4"
+          "w-5/6 space-y-20 max-md:m-auto md:ml-20 md:max-w-[800px]"
         )}
       >
-        <div>
-          CSR has gained significant importance as stakeholders prioritize
-          ethical, social, and environmental factors when evaluating companies.
-          However, manually analyzing extensive CSR reports to extract key
-          information can be laborious.
-        </div>
-        <div>
-          Our research intends to explore the utilization of large language
-          models, to automate the analysis of CSR reports. By leveraging the
-          capabilities of NLP and LLMs, we aim to efficiently extract key
-          insights from CSR reports and generate concise summaries regarding the
-          disclosure of CSR indices.
+        <InviewTransition className={cn("text-pretty text-2xl md:text-3xl")}>
+          We analyze companies&apos; CSR reports and
+          <br className={cn("max-md:hidden")} /> make effort to build an ESG
+          database in Taiwan.
+        </InviewTransition>
+
+        <div
+          className={cn(
+            "space-y-4 text-pretty max-md:text-sm md:w-11/12 lg:text-lg"
+          )}
+        >
+          <div>
+            CSR has gained significant importance as stakeholders prioritize
+            ethical, social, and environmental factors when evaluating
+            companies. However, manually analyzing extensive CSR reports to
+            extract key information can be laborious.
+          </div>
+          <div>
+            Our research intends to explore the utilization of large language
+            models, to automate the analysis of CSR reports. By leveraging the
+            capabilities of NLP and LLMs, we aim to efficiently extract key
+            insights from CSR reports and generate concise summaries regarding
+            the disclosure of CSR indices.
+          </div>
         </div>
       </div>
-    </div>
     </div>
 
     <div className={cn("h-[10dvh]")} />

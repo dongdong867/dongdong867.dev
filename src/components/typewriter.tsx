@@ -49,7 +49,7 @@ export const Typewriter = ({
                   <motion.span
                     initial={{ display: "hidden" }}
                     key={`char-${index}`}
-                    className={cn("opacity-0 hidden", word.className)}
+                    className={cn("hidden opacity-0", word.className)}
                   >
                     {char}
                   </motion.span>
@@ -74,7 +74,7 @@ export const Typewriter = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "w-0.5 h-full ml-1 bg-blue rounded-full inline-block",
+          "ml-1 inline-block h-full w-0.5 rounded-full bg-blue",
           cursorClassName
         )}
       />

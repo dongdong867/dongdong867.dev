@@ -7,11 +7,11 @@ import { Translatable } from "@/components/translatable";
 export const SimPOS = () => {
   return (
     <Card>
-      <div className={cn("w-max m-auto text-center space-y-4")}>
+      <div className={cn("m-auto w-max space-y-4 text-center")}>
         <div className={cn("text-gray")}>iOS Development</div>
         <div className={cn("text-5xl font-medium tracking-tight")}>SimPOS</div>
         <div> 2024 Swift Student Challenge Winning Project</div>
-        <div className={cn("w-max m-auto flex flex-col place-items-center")}>
+        <div className={cn("m-auto flex w-max flex-col place-items-center")}>
           <Link href={"https://github.com/dongdong867/SimPOS"}>
             <Translatable className={cn("text-center text-blue")}>
               Source code ↗
@@ -32,7 +32,7 @@ export const SimPOS = () => {
         width={600}
         height={300}
         className={cn(
-          "absolute max-md:w-5/6 -bottom-20 md:-bottom-32",
+          "absolute -bottom-20 max-md:w-5/6 md:-bottom-32",
           "left-1/2 -translate-x-1/2 drop-shadow-2xl",
           "transition-transform group-hover/card:scale-110"
         )}

@@ -8,7 +8,7 @@ export const GoCafe = () => {
   return (
     <Card>
       <div className={cn("flex max-md:flex-col")}>
-        <div className={cn("md:w-3/5 my-auto space-y-10")}>
+        <div className={cn("my-auto space-y-10 md:w-3/5")}>
           <Image
             src={"/projects/gocafe.png"}
             alt=""
@@ -22,7 +22,7 @@ export const GoCafe = () => {
             <div className={cn("text-5xl font-medium tracking-tight")}>
               Go Cafe
             </div>
-            <div className={cn("w-max m-auto")}>
+            <div className={cn("m-auto w-max")}>
               <Link href={"https://github.com/dongdong867/go-cafe"}>
                 <Translatable className={cn("text-center text-blue")}>
                   Source Code ↗
@@ -39,7 +39,7 @@ export const GoCafe = () => {
           width={260}
           height={600}
           className={cn(
-            "absolute md:top-12 max-md:-bottom-44 max-md:left-1/2 max-md:-translate-x-1/2 md:right-20 lg:right-40 xl:right-60",
+            "absolute max-md:-bottom-44 max-md:left-1/2 max-md:-translate-x-1/2 md:right-20 md:top-12 lg:right-40 xl:right-60",
             "drop-shadow-2xl transition-transform group-hover/card:scale-110"
           )}
         />

@@ -9,20 +9,20 @@ const SimPOSPage = () => {
 
       <div
         className={cn(
-          "w-full h-[40dvh] space-y-4",
-          "flex justify-center place-items-center"
+          "h-[40dvh] w-full space-y-4",
+          "flex place-items-center justify-center"
         )}
       >
         <div className="space-x-4 text-2xl text-gray">
           Sometimes
-          <span className={cn("text-6xl text-foreground font-medium mx-4")}>
+          <span className={cn("mx-4 text-6xl font-medium text-foreground")}>
             Simple
           </span>
           is all people need.
         </div>
       </div>
 
-      <div className="w-full md:w-5/6 m-auto py-20 bg-gray6 flex place-items-center">
+      <div className="m-auto flex w-full place-items-center bg-gray6 py-20 md:w-5/6">
         <Image
           src={"/projects/simpos/banner.png"}
           alt=""
@@ -34,16 +34,16 @@ const SimPOSPage = () => {
 
       <div className={cn("h-[10dvh]")} />
 
-      <div className={cn("text-4xl text-center text-gray")}>
+      <div className={cn("text-center text-4xl text-gray")}>
         A  WWDC24 Swift Student Challenge Winning Project.
       </div>
 
       <div className={cn("h-[20dvh]")} />
 
-      <div className={cn("w-full md:w-5/6 m-auto")}>
+      <div className={cn("m-auto w-full md:w-5/6")}>
         <div
           className={cn(
-            "w-5/6 md:max-w-[800px] md:ml-20 space-y-8 text-lg text-pretty"
+            "w-5/6 space-y-8 text-pretty text-lg md:ml-20 md:max-w-[800px]"
           )}
         >
           <div>

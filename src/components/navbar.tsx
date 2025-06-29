@@ -8,9 +8,9 @@ export const Navbar = () => {
   return (
     <div
       className={cn(
-        "fixed w-full max-w-md max-md:w-11/12 left-1/2 -translate-x-1/2",
-        "mt-4 px-4 bg-gray5/50 backdrop-blur-md rounded-full z-50 shadow-lg",
-        "flex justify-between place-items-center"
+        "fixed left-1/2 w-full max-w-md -translate-x-1/2 max-md:w-11/12",
+        "z-50 mt-4 rounded-full bg-gray5/50 px-4 shadow-lg backdrop-blur-md",
+        "flex place-items-center justify-between"
       )}
     >
       <Link href={"/"}>
@@ -20,7 +20,7 @@ export const Navbar = () => {
             alt=""
             width={40}
             height={40}
-            className={cn("size-10 aspect-square p-1.5 invert dark:invert-0")}
+            className={cn("aspect-square size-10 p-1.5 invert dark:invert-0")}
           />
         </Translatable>
       </Link>

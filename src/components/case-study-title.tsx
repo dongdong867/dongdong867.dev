@@ -11,8 +11,8 @@ export const CaseStudyTitle = ({
   return (
     <div
       className={cn(
-        "w-full md:w-4/5 h-[40dvh] m-auto space-y-4",
-        "flex flex-col justify-end place-items-center md:place-items-start"
+        "m-auto h-[40dvh] w-full space-y-4 md:w-4/5",
+        "flex flex-col place-items-center justify-end md:place-items-start"
       )}
     >
       <Typewriter

@@ -61,29 +61,37 @@ export const SkillSets = ({
         variant={"outline"}
         onClick={() => setSelection(selectionName)}
         className={cn(
-          "h-full text-2xl md:text-3xl text-black rounded-full p-0 m-auto md:m-2",
+          "m-auto h-full rounded-full p-0 text-2xl text-black md:m-2 md:text-3xl",
           className,
           {
-            "dark:text-white bg-gray5 hover:bg-gray5 dark:bg-gray4 dark:hover:bg-gray4":
+            "bg-gray5 hover:bg-gray5 dark:bg-gray4 dark:text-white dark:hover:bg-gray4":
               selection == selectionName,
           }
         )}
       >
-        <Translatable className={cn("size-full px-4 py-2 flex place-items-center")}>{label}</Translatable>
+        <Translatable
+          className={cn("flex size-full place-items-center px-4 py-2")}
+        >
+          {label}
+        </Translatable>
       </Button>
     );
   };
 
   return (
-    <div className={cn("w-full h-max bg-white")}>
-      <div className={cn("w-11/12 md:w-5/6 m-auto md:py-20 space-y-20")}>
-        <div className={cn("flex max-md:flex-col place-items-center max-md:space-y-6")}>
+    <div className={cn("h-max w-full bg-white")}>
+      <div className={cn("m-auto w-11/12 space-y-20 md:w-5/6 md:py-20")}>
+        <div
+          className={cn(
+            "flex place-items-center max-md:flex-col max-md:space-y-6"
+          )}
+        >
           <div
             className={cn(
-              "w-full md:w-2/5 max-md:text-center max-md:space-x-2 space-y-2"
+              "w-full space-y-2 max-md:space-x-2 max-md:text-center md:w-2/5"
             )}
           >
-            <div className={cn("text-lg md:text-xl text-gray pb-4 md:pb-8")}>
+            <div className={cn("pb-4 text-lg text-gray md:pb-8 md:text-xl")}>
               Skill Sets
             </div>
             <SkillSetButton label="Frontend" selectionName="frontend" />
@@ -100,7 +108,7 @@ export const SkillSets = ({
           </div>
           <div
             className={cn(
-              "w-11/12 md:w-3/5 min-h-[300px] flex justify-center place-items-center space-x-2"
+              "flex min-h-[300px] w-11/12 place-items-center justify-center space-x-2 md:w-3/5"
             )}
           >
             {showSelection()}

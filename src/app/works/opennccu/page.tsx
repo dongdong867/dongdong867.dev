@@ -13,25 +13,25 @@ const OpenNCCUPage = () => {
 
       <div
         className={cn(
-          "w-full h-[40dvh] text-2xl sm:text-4xl md:text-5xl font-medium group/opennccu"
+          "group/opennccu h-[40dvh] w-full text-2xl font-medium sm:text-4xl md:text-5xl"
         )}
       >
         <div
           className={cn(
-            "w-max h-full m-auto flex justify-center place-items-center space-x-2 md:space-x-3"
+            "m-auto flex h-full w-max place-items-center justify-center space-x-2 md:space-x-3"
           )}
         >
           <div>Design</div>
           <div>
             <div
               className={cn(
-                "transition-all text-[#59CC95] animate-sliding-top"
+                "animate-sliding-top text-[#59CC95] transition-all"
               )}
             >
               by
             </div>
             <div
-              className={cn("transition-all text-gray animate-sliding-down")}
+              className={cn("animate-sliding-down text-gray transition-all")}
             >
               for
             </div>
@@ -45,13 +45,13 @@ const OpenNCCUPage = () => {
         alt=""
         width={1000}
         height={500}
-        className={cn("lg:w-4/5 m-auto overflow-hidden bg-gray5")}
+        className={cn("m-auto overflow-hidden bg-gray5 lg:w-4/5")}
       />
 
       <div className={cn("h-[20dvh]")} />
 
-      <div className={cn("w-5/6 md:w-max m-auto space-y-20 md:text-lg")}>
-        <div className={cn("md:max-w-[600px] space-y-10")}>
+      <div className={cn("m-auto w-5/6 space-y-20 md:w-max md:text-lg")}>
+        <div className={cn("space-y-10 md:max-w-[600px]")}>
           <div className="w-max">
             <Image
               src={"/projects/opennccu.png"}
@@ -74,7 +74,7 @@ const OpenNCCUPage = () => {
         </div>
       </div>
 
-      <div className={cn("w-5/6 md:w-max m-auto flex pt-20 space-x-10")}>
+      <div className={cn("m-auto flex w-5/6 space-x-10 pt-20 md:w-max")}>
         <div className={cn("max-md:space-y-10 md:flex md:space-x-10")}>
           <Translatable>
             <Image
@@ -117,8 +117,8 @@ const OpenNCCUPage = () => {
         </div>
       </div>
 
-      <div className={cn("h-[12dvh] flex place-items-end")}>
-        <div className={cn("h-max mx-auto  text-2xl font-medium text-gray")}>
+      <div className={cn("flex h-[12dvh] place-items-end")}>
+        <div className={cn("mx-auto h-max  text-2xl font-medium text-gray")}>
           And more coming soon...
         </div>
       </div>
