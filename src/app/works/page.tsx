@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Csrone } from "./components/csrone";
 import { Dong } from "./components/dong";
-import { GoCafe } from "./components/gocafe";
 import { Oncoming } from "./components/oncoming";
 import { Opennccu } from "./components/opennccu";
 import { SimPOS } from "./components/simpos";
@@ -33,7 +32,7 @@ const WorksPage = () => {
         <What2Eat />
       </div>
       <Csrone />
-      <GoCafe />
+      {/* <GoCafe /> */}
       <Oncoming />
     </div>
   );
