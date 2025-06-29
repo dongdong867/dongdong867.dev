@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils";
-import { experiences } from "@/data/experience";
 import { InviewTransition } from "@/components/inview-transition";
+import { experiences } from "@/data/experience";
+import { cn } from "@/lib/utils";
 
 export const Experience = () => {
   return (
@@ -21,7 +21,7 @@ export const Experience = () => {
               display: "block",
               transitionDuration: "800ms",
             }}
-            key={`${experience.company}-${experience.position}`}
+            key={`${experience.company}-${experience.position}-${experience.start}`}
           >
             <div
               className={cn(
