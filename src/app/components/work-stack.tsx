@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Donut from "/public/home/donut.png";
-import Cone from "/public/home/cone.png";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Cone from "/public/home/cone.png";
+import Donut from "/public/home/donut.png";
 
 export const WorkStack = () => {
   return (
@@ -19,7 +19,6 @@ export const WorkStack = () => {
           <div className="pl-10 text-4xl font-bold md:pl-20 md:text-7xl md:tracking-tight xl:text-8xl">
             <div className="relative z-20">Frontend</div>
             <div>Backend</div>
-            <div>Database</div>
             <div>Mobile App</div>
             <div className="relative z-20">NLP, LLM</div>
           </div>
